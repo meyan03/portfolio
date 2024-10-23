@@ -17,17 +17,28 @@
         h1 {
             text-align: center;
             color: #0056b3;
+            margin-bottom: 30px;
         }
         .project {
             background-color: #ffffff;
             border-radius: 8px;
-            padding: 20px;
+            padding: 25px;
             margin: 20px auto;
             max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .project:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
         }
         .project h2 {
             color: #007bff;
+            margin-bottom: 10px;
+        }
+        .project h4 {
+            color: #555;
+            margin-top: 5px;
             margin-bottom: 10px;
         }
         .project p {
