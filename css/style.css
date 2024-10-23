@@ -1,0 +1,150 @@
+/* Style de base */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeeba;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres des sections */
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Paragraphes et textes */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Listes */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Boutons */
+a.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 40px;
+    position: relative;
+}
+
+/* Améliorations supplémentaires */
+body, html {
+    scroll-behavior: smooth;
+}
+
+/* Images circulaires pour les photos de profil */
+.img-circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Effets de transition */
+section, header, footer {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Effet au survol des sections */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries pour mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .img-circle {
+        width: 100px;
+        height: 100px;
+    }
+}
