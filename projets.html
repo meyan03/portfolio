@@ -3,32 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Projets - Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .project {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .project p {
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Mes Projets</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="a_propos.html">À propos</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Mes Projets</h1>
 
-    <main>
-        <h2>Projets récents</h2>
-        <ul>
-            <li><a href="lien_du_projet1" target="_blank">Nom du Projet 1</a></li>
-            <li><a href="lien_du_projet2" target="_blank">Nom du Projet 2</a></li>
-        </ul>
-    </main>
+    <div class="project">
+        <h2>Analyste de données cyber</h2>
+        <p><strong>Date :</strong> Déc. 2023 - Avr. 2024</p>
+        <p><strong>Organisation :</strong> UGA x STMicroelectronics, Grenoble</p>
+        <p><strong>Objectif :</strong> Sécurisation de fichier.</p>
+        <p><strong>Missions :</strong> Analyse des données, Analyse des risques et des exigences.</p>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
-    </footer>
+    <div class="project">
+        <h2>Développement d'un système de recherche d'informations</h2>
+        <p><strong>Date :</strong> Sept. 2022 - Déc. 2022</p>
+        <p><strong>Organisation :</strong> Université de Grenoble Alpes, Valence</p>
+        <p><strong>Missions :</strong> Diviser le problème en 5 sous-problèmes, utiliser le langage de programmation Java et la plateforme Gitlab, implémenter plusieurs algorithmes de différents types afin d'atteindre l'objectif.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Meyan. Tous droits réservés.</p>
+        <p><a href="index.html">Retour à la page principale</a></p>
+    </div>
 </body>
 </html>

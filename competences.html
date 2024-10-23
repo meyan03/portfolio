@@ -3,33 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétences</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Compétences - Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .skills-section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .skills-list {
+            margin-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Mes Compétences</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="a_propos.html">À propos</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Mes Compétences</h1>
 
-    <main>
-        <h2>Compétences Techniques</h2>
-        <ul>
-            <li>Programmation : Java, Python, C++</li>
-            <li>Développement Web : HTML, CSS, JavaScript</li>
-            <li>Cybersécurité : Analyse des risques, Sécurisation des systèmes</li>
+    <div class="skills-section">
+        <h2>Programmation</h2>
+        <ul class="skills-list">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Elixir</li>
+            <li>Ocaml</li>
+            <li>R</li>
         </ul>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
-    </footer>
+        <h2>Développement Web</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>Frameworks (Django, Phoenix, Vue)</li>
+        </ul>
+
+        <h2>Bases de données</h2>
+        <ul class="skills-list">
+            <li>PostgreSQL</li>
+        </ul>
+
+        <h2>Conteneurisation, orchestration et CI/CD</h2>
+        <ul class="skills-list">
+            <li>Docker</li>
+            <li>GitHub Actions</li>
+        </ul>
+
+        <h2>Automatisation et extraction de données Web</h2>
+        <ul class="skills-list">
+            <li>Selenium WebDriver</li>
+            <li>Extraction de données dynamiques</li>
+        </ul>
+
+        <h2>Outils et environnements de développement</h2>
+        <ul class="skills-list">
+            <li>Visual Studio Code</li>
+            <li>Jupyter</li>
+            <li>GitLab</li>
+            <li>GitHub</li>
+            <li>Postman</li>
+        </ul>
+
+        <h2>Systèmes d'exploitation</h2>
+        <ul class="skills-list">
+            <li>Windows</li>
+            <li>Linux</li>
+            <li>Ubuntu</li>
+        </ul>
+
+        <h2>Advanced RISC Machines (ARM)</h2>
+
+        <h2>Gestion de projet</h2>
+        <ul class="skills-list">
+            <li>Analyse des besoins</li>
+            <li>Planification</li>
+            <li>Organisation</li>
+            <li>Travail en équipe</li>
+            <li>Rédaction technique</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Meyan. Tous droits réservés.</p>
+        <p><a href="index.html">Retour à la page principale</a></p>
+    </div>
 </body>
 </html>
