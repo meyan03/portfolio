@@ -10,14 +10,14 @@ body {
 
 /* En-tête */
 header {
-    background-color: #007bff;
+    background-color: #0056b3; /* Couleur légèrement plus foncée */
     color: #fff;
-    padding: 15px 0;
+    padding: 20px 0; /* Augmenter le padding pour un look plus aéré */
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombre plus douce */
 }
 
 /* Navigation */
@@ -36,12 +36,15 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 600; /* Légèrement plus gras pour le texte */
+    padding: 5px 10px; /* Ajout de padding pour un effet de bouton */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffeeba;
+    background-color: rgba(255, 255, 255, 0.2); /* Fond clair au survol */
+    color: #ffeeba; /* Couleur du texte au survol */
 }
 
 /* Sections */
@@ -49,16 +52,19 @@ section {
     padding: 40px;
     margin: 20px auto;
     max-width: 1000px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 12px; /* Coins arrondis plus marqués */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Transition pour effet d'ombre */
 }
 
 /* Titres des sections */
 section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #007bff;
+    font-size: 30px; /* Taille de police augmentée */
+    margin-bottom: 15px;
+    color: #0056b3;
+    border-bottom: 2px solid #e9ecef; /* Ligne sous le titre */
+    padding-bottom: 10px;
 }
 
 /* Paragraphes et textes */
@@ -85,18 +91,19 @@ a.button {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Ajout de la transformation */
 }
 
 a.button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Léger soulèvement au survol */
 }
 
 /* Pied de page */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #007bff;
+    background-color: #0056b3;
     color: #fff;
     margin-top: 40px;
     position: relative;
@@ -114,17 +121,13 @@ body, html {
     height: 150px;
     display: block;
     margin: 0 auto 20px auto;
+    border: 4px solid #0056b3; /* Bordure autour de l'image */
 }
 
 /* Effets de transition */
-section, header, footer {
-    transition: all 0.3s ease-in-out;
-}
-
-/* Effet au survol des sections */
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
 }
 
 /* Media Queries pour mobile */
