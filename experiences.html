@@ -19,6 +19,29 @@
             color: #0056b3;
             margin-bottom: 30px;
         }
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filters button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .filters button:hover {
+            background-color: #0056b3;
+        }
+        .filters button.active {
+            background-color: #0056b3;
+            color: #fff;
+        }
         .experience-section {
             margin: 20px auto;
             max-width: 800px;
@@ -26,15 +49,6 @@
             border-radius: 8px;
             padding: 25px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        .experience-section h2 {
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-        .experience-list {
-            margin-left: 20px;
-            list-style-type: none;
-            padding: 0;
         }
         .experience-item {
             margin-bottom: 20px;
@@ -46,6 +60,9 @@
         .experience-item:hover {
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
             transform: translateY(-2px);
+        }
+        .hidden {
+            display: none;
         }
         .footer {
             text-align: center;
@@ -65,47 +82,55 @@
 <body>
     <h1>Mes Expériences Professionnelles</h1>
 
+    <!-- Filtres -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="academiques">Académiques</button>
+        <button class="filter-btn" data-filter="techniques">Techniques</button>
+        <button class="filter-btn" data-filter="sociales">Sociales</button>
+    </div>
+
+    <!-- Expériences -->
     <div class="experience-section">
-        <h2>Expériences</h2>
         <ul class="experience-list">
-            <li class="experience-item">
+            <li class="experience-item" data-category="academiques">
                 <strong>Ambassadrice Epitech</strong> <br>
                 <em>Epitech - L'école de l'excellence informatique</em> <br>
                 Nov. 2024 - Aujourd'hui <br>
                 <strong>Missions :</strong> Participation aux portes ouvertes et forums, interventions aux lycées et universités, encadrement et conseils.
             </li>
-            <li class="experience-item">
+            <li class="experience-item" data-category="academiques">
                 <strong>Professeure Particulière en Mathématiques</strong> <br>
                 <em>Acadomia - CDI temps partiel</em> <br>
                 Nov. 2024 - Aujourd'hui <br>
                 <strong>Missions :</strong> Accompagnement individualisé des élèves de différents niveaux, préparation aux examens et soutien pédagogique, élaboration de méthodes d'enseignement adaptées aux besoins spécifiques de chaque élève.
             </li>
-            <li class="experience-item">
+            <li class="experience-item" data-category="techniques">
                 <strong>Développement de Chatbot</strong> <br>
                 <em>ComptaSmart, Marseille - Stage</em> <br>
                 Mai 2024 - Août 2024 <br>
-                <strong>Missions :</strong> Étude du besoin, Création d'un flux de conversation logique et intuitif, Développement du modèle de traitement du langage naturel, Implémentation du chatbot.
+                <strong>Missions :</strong> Étude du besoin, création d'un flux de conversation logique et intuitif, développement du modèle de traitement du langage naturel, implémentation du chatbot.
             </li>
-            <li class="experience-item">
+            <li class="experience-item" data-category="techniques">
                 <strong>Informatique Technique</strong> <br>
                 <em>TEKNOFORCE, Bamako - Stage</em> <br>
                 Août 2023 <br>
                 <strong>Missions :</strong> Installation de Windows et quelques logiciels, maintenance préventive et dépannage, mise en application des concepts liés aux réseaux, assistance d’un câblage chez Orange.
             </li>
-            <li class="experience-item">
+            <li class="experience-item" data-category="sociales">
                 <strong>Appui aux personnels des bibliothèques</strong> <br>
                 <em>Université Grenoble Alpes, Valence</em> <br>
                 <em>CDD temps partiel</em> <br>
                 Sept. 2022 - Déc. 2022 <br>
                 <strong>Missions :</strong> Rangement des documents, maintien de l’ordre et du calme.
             </li>
-            <li class="experience-item">
+            <li class="experience-item" data-category="sociales">
                 <strong>Auxiliaire de vie</strong> <br>
                 <em>DESTIA - CDI temps partiel</em> <br>
                 Sept. 2022 - Mai 2023 <br>
                 <strong>Missions :</strong> Aide dans les actes de la vie quotidienne et administrative, préparation de repas équilibrés, identification des situations d’urgence et prévention des risques, aide à l’autonomie de la personne aidée.
             </li>
-            <li class="experience-item">
+            <li class="experience-item" data-category="sociales">
                 <strong>Bénévolat : Accompagnante éducative et sociale</strong> <br>
                 <em>AFEV</em> <br>
                 Sept. 2024 - Aujourd'hui <br>
@@ -118,5 +143,31 @@
         <p>&copy; 2024 Meyan. Tous droits réservés.</p>
         <p><a href="index.html">Retour à la page principale</a></p>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const experienceItems = document.querySelectorAll('.experience-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Supprimer l'état "active" de tous les boutons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Ajouter "active" au bouton cliqué
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Filtrer les expériences
+                experienceItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
