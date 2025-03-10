@@ -93,67 +93,103 @@
 
     <!-- Expériences -->
     <div class="experience-section">
-        <ul class="experience-list">
 
-            <li class="experience-item" data-category="cybersecu">
-                <strong>Administrateur Système et Réseau</strong> <br>
-                <em>Opase, Paris - Alternance</em> <br>
-                <em>Décembre 2024 - Aujourd'hui</em> <br>
-                <strong>Missions :</strong> 
-                <ul>
-                    <li>Mise à jour des outils logiciels.</li>
-                    <li>Optimisation du monitoring avec Zabbix.</li>
-                    <li>Administration et maintenance des environnements virtualisés.</li>
-                    <li>Application des bonnes pratiques de sécurité des infrastructures.</li>
-                    <li>Amélioration du réseau interne et sécurisation des VPN et NAS.</li>
-                </ul>
-            </li>
+        <!-- Nouvelle expérience: Administrateur Système et Réseau & DevOps -->
+        <li class="experience-item" data-category="cybersecu">
+            <strong>Administrateur Système et Réseau & DevOps</strong> <br>
+            <em>Opase, Issy-les-Moulineaux - Alternance</em> <br>
+            <strong>Missions :</strong>
+            <ul>
+                <!-- Monitoring & Supervision -->
+                <li>Déploiement et configuration de la supervision des machines virtuelles via Zabbix.</li>
+                <li>Analyse et traitement des alertes pour améliorer la stabilité et la performance des systèmes.</li>
+                <li>Automatisation de l’ajout de nouveaux hôtes Zabbix via un playbook Ansible (création du host, installation de l’agent, configuration des templates).</li>
 
-            
-            <li class="experience-item" data-category="academiques">
-                <strong>Ambassadrice Epitech</strong> <br>
-                <em>Epitech - L'école de l'excellence informatique</em> <br>
-                Nov. 2024 - Aujourd'hui <br>
-                <strong>Missions :</strong> Participation aux portes ouvertes et forums, interventions aux lycées et universités, encadrement et conseils.
-            </li>
-            <li class="experience-item" data-category="academiques">
-                <strong>Professeure Particulière en Mathématiques</strong> <br>
-                <em>Acadomia - CDI temps partiel</em> <br>
-                Nov. 2024 - Aujourd'hui <br>
-                <strong>Missions :</strong> Accompagnement individualisé des élèves de différents niveaux, préparation aux examens et soutien pédagogique, élaboration de méthodes d'enseignement adaptées aux besoins spécifiques de chaque élève.
-            </li>
-            <li class="experience-item" data-category="techniques">
-                <strong>Développement de Chatbot</strong> <br>
-                <em>ComptaSmart, Marseille - Stage</em> <br>
-                Mai 2024 - Août 2024 <br>
-                <strong>Missions :</strong> Étude du besoin, création d'un flux de conversation logique et intuitif, développement du modèle de traitement du langage naturel, implémentation du chatbot.
-            </li>
-            <li class="experience-item" data-category="techniques">
-                <strong>Informatique Technique</strong> <br>
-                <em>TEKNOFORCE, Bamako - Stage</em> <br>
-                Août 2023 <br>
-                <strong>Missions :</strong> Installation de Windows et quelques logiciels, maintenance préventive et dépannage, mise en application des concepts liés aux réseaux, assistance d’un câblage chez Orange.
-            </li>
-            <li class="experience-item" data-category="sociales">
-                <strong>Bénévolat : Accompagnante éducative et sociale</strong> <br>
-                <em>AFEV</em> <br>
-                Sept. 2024 - Aujourd'hui <br>
-                <strong>Missions :</strong> Aider un jeune, de la maternelle au lycée, dans son parcours, lui redonner envie d'apprendre, créer du lien avec l'école, la culture, la ville.
-            </li>
-            <li class="experience-item" data-category="sociales">
-                <strong>Auxiliaire de vie</strong> <br>
-                <em>DESTIA - CDI temps partiel</em> <br>
-                Sept. 2022 - Mai 2023 <br>
-                <strong>Missions :</strong> Aide dans les actes de la vie quotidienne et administrative, préparation de repas équilibrés, identification des situations d’urgence et prévention des risques, aide à l’autonomie de la personne aidée.
-            </li>
-            <li class="experience-item" data-category="sociales">
-                <strong>Appui aux personnels des bibliothèques</strong> <br>
-                <em>Université Grenoble Alpes, Valence</em> <br>
-                <em>CDD temps partiel</em> <br>
-                Sept. 2022 - Déc. 2022 <br>
-                <strong>Missions :</strong> Rangement des documents, maintien de l’ordre et du calme.
-            </li>
-        </ul>
+                <!-- Sécurité & Protection des Infrastructures -->
+                <li>Mise en place et gestion des règles pare-feu (nftables) pour sécuriser les flux réseau.</li>
+                <li>Déploiement et configuration de Fail2Ban pour bloquer les tentatives de brute force sur SSH.</li>
+                <li>Administration et sécurisation des serveurs web avec Apache (configuration, optimisation, gestion des certificats SSL).</li>
+                <li>Surveillance et durcissement des serveurs via rkhunter pour détecter d’éventuelles intrusions.</li>
+
+                <!-- Automatisation & DevOps -->
+                <li>Automatisation du déploiement des règles nftables avec Ansible via Drone CI, garantissant une gestion sécurisée et agile du réseau.</li>
+                <li>Maintien et mise à jour des images de conteneurs Podman pour assurer un environnement stable et sécurisé.</li>
+                <li>Création de playbooks Ansible pour l’installation et la configuration automatique d’outils de sécurité (Fail2Ban, Rkhunter, Exim…).</li>
+            </ul>
+        </li>
+
+
+        <!-- Autres expériences existantes -->
+        <li class="experience-item" data-category="academiques">
+            <strong>Ambassadrice Epitech</strong> <br>
+            <em>Epitech - L'école de l'excellence informatique</em> <br>
+            Nov. 2024 - Aujourd'hui <br>
+            <strong>Missions :</strong> Participation aux portes ouvertes et forums, interventions aux lycées et universités, encadrement et conseils.
+        </li>
+
+        <!-- Nouvelle expérience: Professeur Particulier Indépendant -->
+        <li class="experience-item" data-category="academiques">
+            <strong>Professeur Particulier Indépendant en Mathématiques</strong> <br>
+            <em>Indépendant</em> <br>
+            Janv. 2025 - Aujourd'hui <br>
+            <strong>Missions :</strong>
+            <ul>
+                <li>Accompagnement individualisé des élèves de différents niveaux.</li>
+                <li>Préparation aux examens et soutien pédagogique.</li>
+                <li>Élaboration de méthodes d'enseignement adaptées aux besoins spécifiques de chaque élève.</li>
+            </ul>
+        </li>
+
+        <!-- Ancienne expérience: Professeure Particulière en Mathématiques (Acadomia) -->
+        <li class="experience-item" data-category="academiques">
+            <strong>Professeure Particulière en Mathématiques</strong> <br>
+            <em>Acadomia - CDI temps partiel</em> <br>
+            Nov. 2024 - Janv. 2025 <br>
+            <strong>Missions :</strong>
+            <ul>
+                <li>Accompagnement individualisé des élèves de différents niveaux.</li>
+                <li>Préparation aux examens et soutien pédagogique.</li>
+                <li>Élaboration de méthodes d'enseignement adaptées aux besoins spécifiques de chaque élève.</li>
+            </ul>
+        </li>
+
+
+        <li class="experience-item" data-category="techniques">
+            <strong>Développement de Chatbot</strong> <br>
+            <em>ComptaSmart, Marseille - Stage</em> <br>
+            Mai 2024 - Août 2024 <br>
+            <strong>Missions :</strong> Étude du besoin, création d'un flux de conversation logique et intuitif, développement du modèle de traitement du langage naturel, implémentation du chatbot.
+        </li>
+
+        <li class="experience-item" data-category="techniques">
+            <strong>Informatique Technique</strong> <br>
+            <em>TEKNOFORCE, Bamako - Stage</em> <br>
+            Août 2023 <br>
+            <strong>Missions :</strong> Installation de Windows et quelques logiciels, maintenance préventive et dépannage, mise en application des concepts liés aux réseaux, assistance d’un câblage chez Orange.
+        </li>
+
+        <li class="experience-item" data-category="sociales">
+            <strong>Bénévolat : Accompagnante éducative et sociale</strong> <br>
+            <em>AFEV</em> <br>
+            Sept. 2024 - Janv. 2025 <br>
+            <strong>Missions :</strong> Aider un jeune, de la maternelle au lycée, dans son parcours, lui redonner envie d'apprendre, créer du lien avec l'école, la culture, la ville.
+        </li>
+
+        <li class="experience-item" data-category="sociales">
+            <strong>Auxiliaire de vie</strong> <br>
+            <em>DESTIA - CDI temps partiel</em> <br>
+            Sept. 2022 - Mai 2023 <br>
+            <strong>Missions :</strong> Aide dans les actes de la vie quotidienne et administrative, préparation de repas équilibrés, identification des situations d’urgence et prévention des risques, aide à l’autonomie de la personne aidée.
+        </li>
+
+        <li class="experience-item" data-category="sociales">
+            <strong>Appui aux personnels des bibliothèques</strong> <br>
+            <em>Université Grenoble Alpes, Valence</em> <br>
+            <em>CDD temps partiel</em> <br>
+            Sept. 2022 - Déc. 2022 <br>
+            <strong>Missions :</strong> Rangement des documents, maintien de l’ordre et du calme.
+        </li>
+
     </div>
 
     <div class="footer">
