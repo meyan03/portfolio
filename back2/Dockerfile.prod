@@ -1,0 +1,16 @@
+FROM python:3.14.0a1-bookworm
+
+RUN apt-get update
+
+WORKDIR /app
+
+COPY . /back
+
+WORKDIR /back
+
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+EXPOSE 8080
+
+ENTRYPOINT ["bash","entrypoint.sh"]

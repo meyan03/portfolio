@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'store/styles.css' %}">
+</head>
+<body>
+    <h1>Products List</h1>
+    <a href="{% url 'admin_home' %}">Home</a>
+    <a href="{% url 'product_create' %}">Create Product</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Inventory</th>
+                <th>Collection</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.title }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.inventory }}</td>
+                <td>{{ product.collection }}</td>
+                <td>
+                    <a href="{% url 'product_update' product.id %}">Edit</a>
+                    <a href="{% url 'product_delete' product.id %}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+</body>
+</html>
