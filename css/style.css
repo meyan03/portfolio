@@ -20,6 +20,17 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombre plus douce */
 }
 
+/* Photo de profil */
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 15px auto; /* Centrage et espacement */
+    border: 4px solid #fff; /* Bordure blanche pour contraster */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Légère ombre */
+}
+
 /* Navigation */
 nav ul {
     list-style: none;
@@ -114,16 +125,6 @@ body, html {
     scroll-behavior: smooth;
 }
 
-/* Images circulaires pour les photos de profil */
-.img-circle {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 0 auto 20px auto;
-    border: 4px solid #0056b3; /* Bordure autour de l'image */
-}
-
 /* Effets de transition */
 section:hover {
     transform: translateY(-5px);
@@ -146,8 +147,16 @@ section:hover {
         margin: 10px;
     }
 
-    .img-circle {
-        width: 100px;
-        height: 100px;
-    }
+/* Photo de profil */
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 15px auto; /* Centrage et espacement */
+    border: 4px solid #fff; /* Bordure blanche pour contraster */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Légère ombre */
+    object-fit: cover; /* Évite l'étirement et garde les proportions */
+}
+
 }
