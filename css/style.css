@@ -149,14 +149,12 @@ section:hover {
 
 /* Photo de profil */
 .profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 15px auto; /* Centrage et espacement */
-    border: 4px solid #fff; /* Bordure blanche pour contraster */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Légère ombre */
-    object-fit: cover; /* Évite l'étirement et garde les proportions */
+  width: 200px;          
+  height: auto;          /* la hauteur s’ajuste automatiquement */
+  border-radius: 50%;    
+  object-fit: cover;     /* évite la déformation, recadre proprement */
+  display: block;
+  margin: 0 auto;        /* centre l’image */
 }
 
 }
