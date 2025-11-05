@@ -190,6 +190,7 @@ footer.site{
 /* Nav enhancements if a UL of links exists in header */
 header.site .links{ display:flex; gap: 8px; flex-wrap: wrap }
 header.site .links a{ font-size:.95rem }
+<<<<<<< HEAD
 
 /* ===== Homepage Enhancements ===== */
 .home-hero .section-inner{ padding: clamp(28px, 5vw, 56px) }
@@ -218,3 +219,5 @@ header.site .links a{ font-size:.95rem }
 @media (max-width: 900px){
   .home-hero .grid{ display:block }
 }
+=======
+>>>>>>> d49c94354f1efde14462e9a226ad00902dbed1e0
