@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Expériences - Mon Portfolio</title>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filters button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .filters button:hover {
+            background-color: #0056b3;
+        }
+        .filters button.active {
+            background-color: #0056b3;
+            color: #fff;
+        }
+        .experience-section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .experience-item:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .hidden {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/><link href="assets/styles.css" rel="stylesheet"/></head>
+<body><section class="hero"><h1>Mes Expériences Professionnelles</h1></section><main>
+
+<!-- Filtres -->
+<div class="filters">
+<button class="filter-btn active" data-filter="all">Tous</button>
+<button class="filter-btn" data-filter="cybersecu">Cyber sécurité</button>
+<button class="filter-btn" data-filter="academiques">Académiques</button>
+<button class="filter-btn" data-filter="techniques">Techniques</button>
+<button class="filter-btn" data-filter="sociales">Sociales</button>
+</div>
+<!-- Expériences -->
+<div class="experience-section">
+<li class="experience-item" data-category="cybersecu">
+<strong>Stagiaire en Cybersécurité</strong> <br/>
+<em>Orange Mali – Division Sécurité</em> <br/>
+        Septembre 2025 <br/>
+<strong>Missions :</strong>
+<ul>
+<li>Comparaison de scanners de vulnérabilités (Nessus, Nexpose, OpenVAS) et analyse de rapports générés.</li>
+<li>Étude et comparaison de solutions de sandboxing (Windows Sandbox, Kata, Qubes OS, Cuckoo, FireEye, VMRay).</li>
+<li>Analyse comparative de solutions de pentesting (Patrowl, Astra Pentest, Pentest-Tools, Sxipher).</li>
+<li>Réalisation d’un audit de vulnérabilités sur DVWA : scans réseau (Nmap), injection SQL, XSS, bruteforce, upload de fichiers malveillants.</li>
+<li>Proposition de solutions correctives (validation d’entrées, HMAC, durcissement des mots de passe, filtrage réseau avec nftables).</li>
+</ul>
+</li>
+<!-- Nouvelle expérience: Administrateur Système et Réseau & DevOps -->
+<li class="experience-item" data-category="cybersecu">
+<strong>Administrateur Système et Réseau et DevOps</strong> <br/>
+<em>Opase, Issy-les-Moulineaux - Alternance</em> <br/>
+<strong>Missions :</strong>
+<ul>
+<!-- Monitoring & Supervision -->
+<li>Déploiement et configuration de la supervision des machines virtuelles via Zabbix.</li>
+<li>Analyse et traitement des alertes pour améliorer la stabilité et la performance des systèmes.</li>
+<li>Automatisation de l’ajout de nouveaux hôtes Zabbix via un playbook Ansible (création du host, installation de l’agent, configuration des templates).</li>
+<!-- Sécurité & Protection des Infrastructures -->
+<li>Mise en place et gestion des règles pare-feu (nftables) pour sécuriser les flux réseau.</li>
+<li>Déploiement et configuration de Fail2Ban pour bloquer les tentatives de brute force sur SSH.</li>
+<li>Administration et sécurisation des serveurs web avec Apache (configuration, optimisation, gestion des certificats SSL).</li>
+<li>Surveillance et durcissement des serveurs via rkhunter pour détecter d’éventuelles intrusions.</li>
+<!-- Automatisation & DevOps -->
+<li>Automatisation du déploiement des règles nftables avec Ansible via Drone CI, garantissant une gestion sécurisée et agile du réseau.</li>
+<li>Maintien et mise à jour des images de conteneurs Podman pour assurer un environnement stable et sécurisé.</li>
+<li>Création de playbooks Ansible pour l’installation et la configuration automatique d’outils de sécurité (Fail2Ban, Rkhunter, Exim…).</li>
+</ul>
+</li>
+<!-- Autres expériences existantes -->
+<li class="experience-item" data-category="academiques">
+<strong>Ambassadrice Epitech</strong> <br/>
+<em>Epitech - L'école de l'excellence informatique</em> <br/>
+            Nov. 2024 - Aujourd'hui <br/>
+<strong>Missions :</strong> Participation aux portes ouvertes et forums, interventions aux lycées et universités, encadrement et conseils.
+        </li>
+<!-- Ancienne expérience: Professeure Particulière en Mathématiques (Acadomia) -->
+<li class="experience-item" data-category="academiques">
+<strong>Professeure Particulière en Mathématiques</strong> <br/>
+<em>Acadomia - CDI temps partiel</em> <br/>
+            Nov. 2024 - Aujourd'hui <br/>
+<strong>Missions :</strong>
+<ul>
+<li>Accompagnement individualisé des élèves de différents niveaux.</li>
+<li>Préparation aux examens et soutien pédagogique.</li>
+<li>Élaboration de méthodes d'enseignement adaptées aux besoins spécifiques de chaque élève.</li>
+</ul>
+</li>
+<li class="experience-item" data-category="techniques">
+<strong>Développement de Chatbot</strong> <br/>
+<em>ComptaSmart, Marseille - Stage</em> <br/>
+            Mai 2024 - Août 2024 <br/>
+<strong>Missions :</strong> Étude du besoin, création d'un flux de conversation logique et intuitif, développement du modèle de traitement du langage naturel, implémentation du chatbot.
+        </li>
+<li class="experience-item" data-category="techniques">
+<strong>Informatique Technique</strong> <br/>
+<em>TEKNOFORCE, Bamako - Stage</em> <br/>
+            Août 2023 <br/>
+<strong>Missions :</strong> Installation de Windows et quelques logiciels, maintenance préventive et dépannage, mise en application des concepts liés aux réseaux, assistance d’un câblage chez Orange.
+        </li>
+<li class="experience-item" data-category="sociales">
+<strong>Bénévolat : Accompagnante éducative et sociale</strong> <br/>
+<em>AFEV</em> <br/>
+            Sept. 2024 - Janv. 2025 <br/>
+<strong>Missions :</strong> Aider un jeune, de la maternelle au lycée, dans son parcours, lui redonner envie d'apprendre, créer du lien avec l'école, la culture, la ville.
+        </li>
+<li class="experience-item" data-category="sociales">
+<strong>Auxiliaire de vie</strong> <br/>
+<em>DESTIA - CDI temps partiel</em> <br/>
+            Sept. 2022 - Mai 2023 <br/>
+<strong>Missions :</strong> Aide dans les actes de la vie quotidienne et administrative, préparation de repas équilibrés, identification des situations d’urgence et prévention des risques, aide à l’autonomie de la personne aidée.
+        </li>
+<li class="experience-item" data-category="sociales">
+<strong>Appui aux personnels des bibliothèques</strong> <br/>
+<em>Université Grenoble Alpes, Valence</em> <br/>
+<em>CDD temps partiel</em> <br/>
+            Sept. 2022 - Déc. 2022 <br/>
+<strong>Missions :</strong> Rangement des documents, maintien de l’ordre et du calme.
+        </li>
+</div>
+<div class="footer">
+<p>© 2025 Meyan. Tous droits réservés.</p>
+<p><a href="index.html">Retour à la page principale</a></p>
+</div>
+<!-- JavaScript -->
+
+</main><script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const experienceItems = document.querySelectorAll('.experience-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Supprimer l'état "active" de tous les boutons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Ajouter "active" au bouton cliqué
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Filtrer les expériences
+                experienceItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script><script defer="True" src="assets/scripts.js"></script><footer class="site">© Experiences · Built with ❤️</footer></body>
+</html>
