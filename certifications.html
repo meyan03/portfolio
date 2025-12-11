@@ -1,218 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certifications - Portfolio de Meyan</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Certifications – Portfolio de Meyan</title>
 
-    <!-- CSS global -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
 
-    <!-- Styles spécifiques à la page -->
     <style>
-        /* Exemple de styles avec la couleur #0056b3 */
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #0056b3;
-            color: #fff;
-            padding: 20px 0;
-        }
-        header .container {
-            width: 90%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #f5f5f5;
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-        }
-        .intro {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .intro h2 {
-            font-size: 28px;
-            color: #0056b3;
-        }
-        .certifications {
+        .certifications-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 18px;
+            margin-top: 16px;
         }
-        .certification {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        .certif-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px 22px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+            transition: all 0.15s ease;
         }
-        .certification h3 {
-            color: #0056b3;
-            font-size: 20px;
-            margin-bottom: 10px;
+
+        .certif-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
         }
-        .certification p {
-            margin: 5px 0;
-            color: #555;
+
+        .certif-card h3 {
+            color: #0a66c2;
+            margin-bottom: 6px;
+            font-size: 1.1rem;
         }
-        .btn-certificat {
+
+        .certif-card p {
+            margin: 4px 0;
+            color: #374151;
+            font-size: 0.95rem;
+        }
+
+        .btn-certif {
+            margin-top: 10px;
             display: inline-block;
-            margin-top: 8px;
             padding: 8px 14px;
-            background-color: #0056b3;
-            color: #fff;
-            border-radius: 20px;
+            border-radius: 999px;
+            background: #0a66c2;
+            color: #ffffff;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            transition: background 0.15s ease;
         }
-        .btn-certificat:hover {
-            background-color: #004080;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #0056b3;
-            color: #fff;
-            margin-top: 20px;
-        }
-        footer a {
-            color: #f5f5f5;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
+
+        .btn-certif:hover {
+            background: #004a99;
         }
     </style>
-
-    <!-- Fonts & assets éventuels -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
-    <header>
-        <section class="hero">
-            <h1>Portfolio de Meyan</h1>
-        </section>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="a_propos.html">À propos</a></li>
-                    <li><a href="formations.html">Formations</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="experiences.html">Expériences</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="competences.html">Compétences</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+<header>
+    <div class="container header-inner">
+        <div class="branding">
+            <h1 class="site-title"><a href="index.html">Portfolio de Meyan</a></h1>
+            <p class="site-subtitle">Master 2 Cybersécurité & Cloud – EPITECH Paris</p>
         </div>
-    </header>
 
-    <main>
-        <section class="intro">
-            <h2>Certifications</h2>
-            <p>Découvrez mes certifications obtenues et celles actuellement en cours :</p>
-        </section>
+        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
 
-        <section class="certifications">
-            <!-- CCNA 1 -->
-            <div class="certification">
-                <h3>CCNA 1 – Introduction aux réseaux (Cisco)</h3>
-                <p><strong>Status :</strong> Obtenu (décembre 2025)</p>
-                <p>
-                    Premier module de la certification Cisco Certified Network Associate (CCNA), 
-                    validant les bases des réseaux : modèles OSI et TCP/IP, adressage IPv4/IPv6, 
-                    commutation, routage de base et configuration initiale des équipements.
-                </p>
-                <a class="btn-certificat" href="CCNA-_Introduction_to_Networks_certificate_meyanmariam04-gmail-com_a56a911a-e518-4f9b-919f-57178bb7f3d4.pdf" target="_blank">
-                    Voir le certificat
-                </a>
-            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="certifications.html" class="active">Certifications</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-            <!-- CCNA 2 -->
-            <div class="certification">
-                <h3>CCNA 2 – Switching, Routing & Wireless Essentials (Cisco)</h3>
-                <p><strong>Status :</strong> En cours</p>
-                <p>
-                    Deuxième module du parcours CCNA actuellement en préparation : 
-                    commutation avancée, VLAN, routage, redondance, et notions de réseaux sans fil.
-                </p>
-            </div>
+<main class="container">
+    <div class="page-title">
+        <h1>Mes Certifications</h1>
+        <p>Certifications obtenues et en cours dans les domaines réseaux, cybersécurité et compétences numériques.</p>
+    </div>
 
-            <!-- Notions de base sur les réseaux -->
-            <div class="certification">
-                <h3>Notions de base sur les réseaux (Cisco)</h3>
-                <p><strong>Status :</strong> Obtenu</p>
-                <p>
-                    Certification obtenue en mars 2025, attestant des connaissances fondamentales
-                    sur les réseaux informatiques (couches réseaux, adresses IP, topologies, etc.).
-                </p>
-                <a class="btn-certificat" href="NetworkingBasicsUpdate20250318-26-ox5lxy.pdf" target="_blank">
-                    Voir le certificat
-                </a>
-            </div>
+    <section class="certifications-grid">
 
-            <!-- SecNum Académie -->
-            <div class="certification">
-                <h3>SecNum Académie (ANSSI)</h3>
-                <p><strong>Status :</strong> En cours</p>
-                <p>
-                    Parcours de sensibilisation et de formation en cybersécurité proposé par l’ANSSI,
-                    couvrant les bonnes pratiques de sécurité numérique et la protection des systèmes d’information.
-                </p>
-            </div>
-
-            <!-- PIX -->
-            <div class="certification">
-                <h3>PIX – Compétences numériques</h3>
-                <p><strong>Status :</strong> Obtenu</p>
-                <p>
-                    Certification obtenue en 2021, attestant des compétences numériques 
-                    (bureautique, sécurité, collaboration en ligne, usages responsables du numérique).
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <p>© 2025 Meyan | Tous droits réservés</p>
-            <p><a href="index.html">Retour à la page principale</a></p>
-            <p>Suivez-moi sur <a href="https://www.linkedin.com/in/meyan/" target="_blank">LinkedIn</a></p>
+        <!-- CCNA 1 -->
+        <div class="certif-card">
+            <h3>CCNA 1 – Introduction to Networks (Cisco)</h3>
+            <p><strong>Status :</strong> Obtenu – Décembre 2025</p>
+            <p>
+                Validation du premier module CCNA : modèles OSI/TCP-IP, IPv4/IPv6, configuration des switches
+                & routeurs de base, introduction aux protocoles réseau fondamentaux.
+            </p>
+            <a class="btn-certif" href="CCNA-_Introduction_to_Networks_certificate_meyanmariam04-gmail-com_a56a911a-e518-4f9b-919f-57178bb7f3d4.pdf" target="_blank">Voir le certificat</a>
         </div>
-    </footer>
 
-    <script defer="true" src="assets/scripts.js"></script>
+        <!-- CCNA 2 -->
+        <div class="certif-card">
+            <h3>CCNA 2 – Switching, Routing & Wireless Essentials (Cisco)</h3>
+            <p><strong>Status :</strong> En cours</p>
+            <p>
+                Module consacré aux réseaux LAN avancés : VLAN, STP, routage statique/dynamique, redondance
+                et introduction aux architectures sans fil.
+            </p>
+        </div>
+
+        <!-- Networking Basics Cisco -->
+        <div class="certif-card">
+            <h3>Networking Basics – Cisco</h3>
+            <p><strong>Status :</strong> Obtenu – Mars 2025</p>
+            <p>
+                Bases des réseaux : adressage IP, topologies, commutation, concepts OSI, transmission de données
+                et premiers pas en configuration réseau.
+            </p>
+            <a class="btn-certif" href="NetworkingBasicsUpdate20250318-26-ox5lxy.pdf" target="_blank">Voir le certificat</a>
+        </div>
+
+        <!-- SecNum Académie -->
+        <div class="certif-card">
+            <h3>SecNum Académie – ANSSI</h3>
+            <p><strong>Status :</strong> En cours</p>
+            <p>
+                Programme officiel de sensibilisation à la cybersécurité : gestion des risques, hygiène numérique,
+                sécurité des SI, menaces et bonnes pratiques.
+            </p>
+        </div>
+
+        <!-- PIX -->
+        <div class="certif-card">
+            <h3>PIX – Compétences numériques</h3>
+            <p><strong>Status :</strong> Obtenu – 2021</p>
+            <p>
+                Validation des compétences numériques essentielles : bureautique, sécurité, navigation web,
+                collaboration en ligne et bonnes pratiques digitales.
+            </p>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <p>&copy; 2025 Meyan – Tous droits réservés</p>
+        <p><a href="index.html">Retour à la page principale</a></p>
+        <p>Retrouvez-moi sur <a href="https://www.linkedin.com/in/meyan/" target="_blank">LinkedIn</a></p>
+    </div>
+</footer>
+
+<script defer="true" src="assets/scripts.js"></script>
 </body>
 </html>

@@ -1,188 +1,174 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Compétences - Mon Portfolio</title>
-<link href="css/style.css" rel="stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Compétences – Portfolio de Meyan</title>
+    <link rel="stylesheet" href="css/style.css"/>
 
-<style>
-    body {
-        font-family: 'Open Sans', Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        background-color: #f0f2f5;
-        color: #333;
-    }
-    h1 {
-        text-align: center;
-        color: #0056b3;
-    }
-    .skills-section {
-        margin: 20px auto;
-        max-width: 800px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-    .skills-section h2 {
-        color: #007bff;
-        margin-bottom: 10px;
-    }
-    .skills-list {
-        margin-left: 20px;
-        list-style-type: disc;
-        padding: 0;
-    }
-    .footer {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #555;
-    }
-    .footer a {
-        color: #007bff;
-        text-decoration: none;
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
-</style>
+    <!-- Styles légers spécifiques à cette page -->
+    <style>
+        .skills-list {
+            margin-left: 18px;
+            list-style-type: disc;
+            padding-left: 4px;
+            font-size: 0.95rem;
+            color: #374151;
+        }
 
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet"/>
-<link href="assets/styles.css" rel="stylesheet"/>
+        .skills-list li {
+            margin-bottom: 4px;
+        }
 
+        .skills-section-title {
+            margin-bottom: 6px;
+        }
+    </style>
 </head>
 <body>
+<header>
+    <div class="container header-inner">
+        <div class="branding">
+            <h1 class="site-title"><a href="index.html">Portfolio de Meyan</a></h1>
+            <p class="site-subtitle">Master 2 Cybersécurité & Cloud – EPITECH Paris</p>
+        </div>
+        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-<section class="hero">
-    <h1>Mes Compétences</h1>
-</section>
+<main class="container">
+    <div class="page-title">
+        <h1>Mes Compétences</h1>
+        <p>Compétences en cybersécurité, cloud, développement, DevOps et gestion de projet.</p>
+    </div>
 
-<main>
-
-<div class="skills-section">
-    
     <!-- ======================= CYBER / AUDIT / DEVOPS ======================= -->
-    <h2>Cybersécurité, Audit &amp; DevOps</h2>
-    <ul class="skills-list">
-        <li><strong>Audit &amp; Analyse de Vulnérabilités</strong> : Nmap, Nessus, Nexpose, OpenVAS</li>
-        <li><strong>Comparaison et Utilisation d’Outils</strong> : Scanners (Nessus, Nexpose, OpenVAS), Sandbox (Windows Sandbox, Kata, Qubes OS, Cuckoo, FireEye, VMRay), Pentest (Patrowl, Astra, Pentest-Tools, Sxipher)</li>
-        <li><strong>Audit Pratique</strong> : Tests sur environnements vulnérables (DVWA, Metasploitable), exploitation de failles (Injection SQL, XSS, brute force, upload de fichiers malveillants)</li>
-        <li><strong>Rapports Techniques</strong> : Rédaction claire et exploitable pour équipes techniques et managers</li>
+    <section class="section-card">
+        <h2 class="skills-section-title">Cybersécurité, Audit &amp; DevOps</h2>
+        <ul class="skills-list">
+            <li><strong>Audit &amp; analyse de vulnérabilités :</strong> Nmap, Nessus, Nexpose, OpenVAS.</li>
+            <li><strong>Comparaison &amp; utilisation d’outils :</strong> scanners (Nessus, Nexpose, OpenVAS), sandbox (Windows Sandbox, Kata, Qubes OS, Cuckoo, FireEye, VMRay), outils de pentest (Patrowl, Astra Pentest, Pentest-Tools, Sxipher).</li>
+            <li><strong>Audit pratique :</strong> tests sur environnements vulnérables (DVWA, Metasploitable), exploitation de failles (injection SQL, XSS, brute force, upload de fichiers malveillants).</li>
+            <li><strong>Rapports techniques :</strong> rédaction claire et exploitable pour équipes techniques et managers.</li>
 
-        <!-- Ajouts T-SEC -->
-        <li><strong>Sécurité offensive (cadre pédagogique)</strong> : conception et simulation d’intrusions avancées pour évaluer la détection d’un SOC.</li>
-        <li><strong>Command &amp; Control (C2)</strong> : prototypage d’outils C2, communication chiffrée, shells distants, résilience, OpSec.</li>
-        <!-- 
-        <li><strong>Techniques de furtivité &amp; évasion</strong> : compréhension AV/EDR, signatures, réduction des traces, évasion comportementale.</li>
-        <li><strong>Attaques sur l’authentification</strong> : analyse de Pass-The-Hash, gestion des secrets, mouvements latéraux.</li>
-        <li><strong>Élévation de privilèges</strong> : analyse et exploitation pédagogique de vulnérabilités locales Windows.</li>
-        <li><strong>Simulation de phishing</strong> : conception automatique de campagnes de phishing pour tests internes.</li>
-        <li><strong>Sécurité des endpoints Windows</strong> : configuration RDP, privilèges, journalisation, durcissement.</li>
-        -->
+            <!-- Ajouts T-SEC -->
+            <li><strong>Sécurité offensive (cadre pédagogique) :</strong> conception et simulation d’intrusions avancées pour évaluer la détection d’un SOC.</li>
+            <li><strong>Command &amp; Control (C2) :</strong> prototypage d’outils C2, communication chiffrée, shells distants, résilience, OpSec.</li>
 
-        <!-- Protection & Infra -->
-        <li><strong>Sécurité des Infrastructures</strong> : nftables, Fail2Ban, Apache, rkhunter</li>
-        <li><strong>Maintien d’Environnements Sécurisés</strong> : Automatisation des patchs, surveillance systemd</li>
+            <!-- Protection & Infra -->
+            <li><strong>Sécurité des infrastructures :</strong> nftables, Fail2Ban, Apache, rkhunter.</li>
+            <li><strong>Maintien d’environnements sécurisés :</strong> automatisation des patchs, surveillance systemd.</li>
 
-        <!-- CI/CD -->
-        <li><strong>Automatisation &amp; CI/CD</strong> : Ansible, Drone CI, GitLab CI/CD</li>
-        <li><strong>Monitoring &amp; Supervision</strong> : Zabbix, Portainer</li>
-        <li><strong>Conteneurs &amp; Orchestration</strong> : Docker, Docker Compose</li>
+            <!-- CI/CD & Monitoring -->
+            <li><strong>Automatisation &amp; CI/CD :</strong> Ansible, Drone CI, GitLab CI/CD.</li>
+            <li><strong>Monitoring &amp; supervision :</strong> Zabbix, Portainer.</li>
+            <li><strong>Conteneurs :</strong> Docker, Docker Compose.</li>
 
-        <!-- Azure -->
-        <li><strong>Labs de cybersécurité sur Azure</strong> : déploiement et exploitation de VM Windows pour tests offensifs/défensifs.</li>
-    </ul>
+            <!-- Azure -->
+            <li><strong>Labs de cybersécurité sur Azure :</strong> déploiement et exploitation de VM Windows pour tests offensifs/défensifs.</li>
+        </ul>
+    </section>
 
     <!-- ======================= PROGRAMMATION ======================= -->
-    <h2>Programmation</h2>
-    <ul class="skills-list">
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C</li>
-        <li>C++</li>
-        <li>Elixir</li>
-        <li>Ocaml</li>
-        <li>R</li>
-
-        <!-- Ajouts T-SEC -->
-        <li><strong>Programmation réseau</strong> : communications client/serveur, sockets, protocoles pour outils de sécurité.</li>
-        <li><strong>Programmation systèmes</strong> : appels système (syscalls), gestion des processus et privilèges en environnement de lab.</li>
-    </ul>
+    <section class="section-card">
+        <h2 class="skills-section-title">Programmation</h2>
+        <ul class="skills-list">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Elixir</li>
+            <li>OCaml</li>
+            <li>R</li>
+            <li><strong>Programmation réseau :</strong> communications client/serveur, sockets, protocoles pour outils de sécurité.</li>
+            <li><strong>Programmation systèmes :</strong> appels système (syscalls), gestion des processus et privilèges en environnement de lab.</li>
+        </ul>
+    </section>
 
     <!-- ======================= WEB & BDD ======================= -->
-    <h2>Développement Web &amp; Bases de Données</h2>
-    <ul class="skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>SQL</li>
-        <li>Frameworks : Django, Phoenix, Vue.js, React.js</li>
-        <li>Bases de Données : PostgreSQL, MySQL</li>
-        <li>Sécurisation des Services Hébergés</li>
-    </ul>
+    <section class="section-card">
+        <h2 class="skills-section-title">Développement web &amp; bases de données</h2>
+        <ul class="skills-list">
+            <li>HTML, CSS</li>
+            <li>SQL</li>
+            <li><strong>Frameworks :</strong> Django, Phoenix, Vue.js, React.js.</li>
+            <li><strong>Bases de données :</strong> PostgreSQL, MySQL.</li>
+            <li><strong>Sécurisation des services hébergés :</strong> bonnes pratiques de configuration, durcissement, gestion des accès.</li>
+        </ul>
+    </section>
 
     <!-- ======================= INFRA & RÉSEAUX ======================= -->
-    <h2>Infrastructure &amp; Réseau</h2>
-    <ul class="skills-list">
-        <li>Configuration et Gestion des Services Hébergés</li>
-        <li>DNS Dynamique et Gestion des Certificats</li>
-        <li>Isolation des Services en Microservices</li>
-    </ul>
+    <section class="section-card">
+        <h2 class="skills-section-title">Infrastructure &amp; réseau</h2>
+        <ul class="skills-list">
+            <li>Configuration et gestion des services hébergés.</li>
+            <li>DNS dynamique et gestion des certificats.</li>
+            <li>Isolation des services en microservices.</li>
+        </ul>
+    </section>
 
     <!-- ======================= AUTOMATISATION ======================= -->
-    <h2>Automatisation &amp; Extraction de Données Web</h2>
-    <ul class="skills-list">
-        <li>Selenium WebDriver</li>
-        <li>Extraction de Données Dynamiques</li>
-        <li>Surveillance et Reporting Automatisé</li>
-    </ul>
+    <section class="section-card">
+        <h2 class="skills-section-title">Automatisation &amp; extraction de données web</h2>
+        <ul class="skills-list">
+            <li>Selenium WebDriver.</li>
+            <li>Extraction de données dynamiques.</li>
+            <li>Surveillance et reporting automatisé.</li>
+        </ul>
+    </section>
 
     <!-- ======================= OUTILS ======================= -->
-    <h2>Outils et Environnements de Développement</h2>
-    <ul class="skills-list">
-        <li>Visual Studio Code</li>
-        <li>Jupyter</li>
-        <li>GitLab</li>
-        <li>GitHub</li>
-        <li>GitHub Actions</li>
-        <li>GitLab CI/CD</li>
-        <li>Tests et Déploiement : Postman, Docker</li>
-    </ul>
+    <section class="section-card">
+        <h2 class="skills-section-title">Outils &amp; environnements de développement</h2>
+        <ul class="skills-list">
+            <li>Visual Studio Code.</li>
+            <li>Jupyter.</li>
+            <li>GitLab, GitHub.</li>
+            <li>GitHub Actions, GitLab CI/CD.</li>
+            <li><strong>Tests &amp; déploiement :</strong> Postman, Docker.</li>
+        </ul>
+    </section>
 
     <!-- ======================= SYSTÈMES ======================= -->
-    <h2>Systèmes d'Exploitation</h2>
-    <ul class="skills-list">
-        <li>Windows &amp; Linux (Ubuntu, Debian)</li>
-        <li>Advanced RISC Machines (ARM)</li>
-        <li>Sécurisation et Maintenance des Environnements de Production</li>
-    </ul>
+    <section class="section-card">
+        <h2 class="skills-section-title">Systèmes d’exploitation</h2>
+        <ul class="skills-list">
+            <li>Windows &amp; Linux (Ubuntu, Debian).</li>
+            <li>Architectures ARM (Advanced RISC Machines).</li>
+            <li>Sécurisation et maintenance des environnements de production.</li>
+        </ul>
+    </section>
 
     <!-- ======================= GESTION PROJET ======================= -->
-    <h2>Gestion de Projet &amp; Collaboration</h2>
-    <ul class="skills-list">
-        <li>Analyse des Besoins &amp; Planification</li>
-        <li>Organisation et Gestion des Dépendances</li>
-        <li>Travail en Équipe &amp; Collaboration Agile</li>
-        <li>Rédaction de Rapports Techniques &amp; Documentation Sécurisée</li>
-    </ul>
-
-</div>
-
-<div class="footer">
-    <p>© 2025 Meyan. Tous droits réservés.</p>
-    <p><a href="index.html">Retour à la page principale</a></p>
-</div>
-
+    <section class="section-card">
+        <h2 class="skills-section-title">Gestion de projet &amp; collaboration</h2>
+        <ul class="skills-list">
+            <li>Analyse des besoins &amp; planification.</li>
+            <li>Organisation et gestion des dépendances.</li>
+            <li>Travail en équipe &amp; collaboration agile.</li>
+            <li>Rédaction de rapports techniques &amp; documentation sécurisée.</li>
+        </ul>
+    </section>
 </main>
 
-<script defer="True" src="assets/scripts.js"></script>
-<footer class="site">© Competences · Built with ❤️</footer>
-
+<footer>
+    <div class="container footer-inner">
+        <p>&copy; 2025 Meyan – Tous droits réservés</p>
+        <p><a href="index.html">Retour à la page principale</a></p>
+    </div>
+</footer>
 </body>
 </html>

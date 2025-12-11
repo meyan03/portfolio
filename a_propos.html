@@ -1,70 +1,97 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>À propos de moi</title>
-<link href="css/style.css" rel="stylesheet"/>
-<style>
-        body {
-            font-family: 'Open Sans', Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #0056b3;
-        }
-        section {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #555;
-        }
-        footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/><link href="assets/styles.css" rel="stylesheet"/></head>
-<body><section class="hero"><h1>À propos de moi</h1></section><header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos – Portfolio de Meyan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <div class="branding">
+            <h1 class="site-title"><a href="index.html">Portfolio de Meyan</a></h1>
+            <p class="site-subtitle">Master 2 Cybersécurité & Cloud – EPITECH Paris</p>
+        </div>
+        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html" class="active">À propos</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-</header><main>
+<main class="container">
+    <div class="page-title">
+        <h1>À propos de moi</h1>
+        <p>Comprendre mon parcours, mes valeurs et ma manière de travailler.</p>
+    </div>
 
-<section>
-<h2>Présentation</h2>
-<p>Je m'appelle Meyan, étudiante en Master 2 <em>Architecture des Systèmes d’Information</em> avec une spécialisation en Cybersécurité & Cloud. Passionnée par l’innovation et l’apprentissage continu, j'envisage de développer mes compétences techniques et humaines pour exceller dans mon domaine tout en partageant mes connaissances pour aider les autres.</p>
-<p>Depuis mon plus jeune âge, j’ai été attirée par les matières scientifiques, ce qui m’a naturellement orientée vers un <strong>baccalauréat scientifique</strong> obtenu au Mali. Cette réussite m’a permis de venir en France pour poursuivre mes études, où j’ai intégré l’Université Grenoble Alpes et obtenu une <strong>Licence en Mathématiques et Informatique</strong>. Après la licence, j’ai choisi de me spécialiser en informatique, un domaine que je trouve plus concret et opérationnel, contrairement aux mathématiques, qui m’auraient orientée vers une carrière principalement académique.</p>
-<p>Mes projets académiques et professionnels, sont détaillés dans la rubrique <strong>Expériences et Projets</strong> de ce portfolio.</p>
-<p>En dehors de mes études, je pratique des sports comme le karaté et le krav maga, qui m’ont appris discipline, résilience et persévérance. Déterminée à contribuer de manière significative dans mon domaine, je m’appuie sur ma rigueur, mes compétences techniques et ma soif constante d’apprendre.</p>
-</section>
+    <section class="section-card">
+        <h2>Qui je suis</h2>
+        <p>
+            Je m’appelle <strong>Meyan Traoré</strong>. Je suis étudiante en Master 2
+            <em>Architecture des Systèmes d’Information – spécialité Cybersécurité & Cloud</em> à EPITECH Paris.
+        </p>
+        <p>
+            Mon objectif est de construire une carrière dans les métiers de la cybersécurité, du cloud
+            et du DevSecOps, en gardant toujours une approche humaine, pédagogique et orientée solution.
+        </p>
+        <p>
+            Mon parcours m’a amenée à vivre dans différents pays et contextes. Cela m’a appris
+            l’adaptabilité, la persévérance et la capacité à comprendre des profils très variés.
+        </p>
+    </section>
 
-</main><footer>
-<p>© 2025 Portfolio de Meyan. Tous droits réservés.</p>
-<p><a href="index.html">Retour à la page principale</a></p>
-</footer><script defer="True" src="assets/scripts.js"></script><footer class="site">© A_Propos · Built with ❤️</footer></body>
+    <section class="section-card">
+        <h2>Ma façon de travailler</h2>
+        <ul>
+            <li><strong>Rigueur :</strong> j’aime les environnements structurés, documentés, où l’on sait pourquoi on fait les choses.</li>
+            <li><strong>Pédagogie :</strong> j’aime expliquer, simplifier et rendre les sujets cyber compréhensibles pour les non-tech.</li>
+            <li><strong>Esprit d’équipe :</strong> j’apprécie les projets collaboratifs, les revues de code, les échanges réguliers.</li>
+            <li><strong>Autonomie :</strong> j’apprends rapidement, je n’ai pas peur d’investiguer seule avant de demander de l’aide.</li>
+        </ul>
+    </section>
+
+    <section class="section-card">
+        <h2>Ce qui me motive</h2>
+        <p>
+            La cybersécurité, pour moi, ce n’est pas uniquement de la technique. C’est aussi de la
+            responsabilité, de la confiance et de la pédagogie. Protéger des données, des systèmes,
+            des utilisateurs et des entreprises, c’est une vraie mission de fond.
+        </p>
+        <p>
+            J’aime particulièrement :
+        </p>
+        <ul>
+            <li>Concevoir des environnements cloud plus sûrs et mieux structurés.</li>
+            <li>Définir des règles simples, compréhensibles et applicables par tous.</li>
+            <li>Rendre visibles les risques et proposer des plans d’action concrets.</li>
+        </ul>
+    </section>
+
+    <section class="section-card">
+        <h2>En dehors du clavier</h2>
+        <ul>
+            <li><strong>Sports :</strong> karaté, krav maga, step – pour la discipline et la gestion du stress.</li>
+            <li><strong>Lecture & écriture :</strong> j’aime lire des chroniques, des romans, et je suis en cours de rédaction d’un roman.</li>
+            <li><strong>Transmission :</strong> j’apprécie beaucoup l’entraide, les groupes de travail et le partage de ressources.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <p>&copy; 2025 Meyan – Tous droits réservés</p>
+    </div>
+</footer>
+</body>
 </html>
