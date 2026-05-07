@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solutions cyber | SWA Tech</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="theme-color" content="#061525" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html" aria-label="SWA Tech - Accueil">
+      <span class="brand-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2l7 4v6c0 5-3.5 9.4-7 10-3.5-.6-7-5-7-10V6l7-4z" stroke="white" stroke-width="1.6" opacity=".95"/>
+          <path d="M8.2 12.2l2.3 2.3 5.3-5.3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>
+        SWA Tech
+        <small>Web • Apps • Cybersécurité & Monitoring</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="">Accueil</a><a href="offres.html" class="">Site web</a><a href="formation_site.html" class="">Formations</a><a href="cybersecurite.html" class="">Cybersécurité</a><a href="a_propos.html" class="">À propos</a><a href="contact.html" class="">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <div class="kicker">🔎 Solutions cyber</div>
+      <h1>Des solutions pensées pour les PME</h1>
+      <p>
+        Ici, je présente des solutions de cybersécurité conçues pour protéger les sites web et services en ligne.
+        Objectif : <strong>efficace</strong>, <strong>simple à déployer</strong>, <strong>adapté aux PME</strong>.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Protection web</span>
+        <span class="badge">Anti-bots</span>
+        <span class="badge">Monitoring & alertes</span>
+        <span class="badge">Déploiement rapide</span>
+        <span class="badge">Sans modifier le code</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#cybershield">CyberShield Network</a>
+        <a class="btn btn-secondary" href="formulaire_cyber.html">Demande Cyber</a>
+        <a class="btn btn-secondary" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>CyberShield Network </h2>
+      <p>
+        <strong>CyberShield Network</strong> protège votre site contre les attaques web courantes
+        (XSS, injections SQL, bots), <strong>sans modifier votre code</strong>.
+        La solution se place entre Internet et votre serveur pour analyser et bloquer le trafic malveillant en amont.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#cybershield">Voir l’histoire + fonctionnement</a>
+        <a class="btn btn-secondary" href="cybersecurite.html">Voir l’offre Cyber</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="cybershield" class="grid">
+    <div class="card">
+      <h2>L’histoire derrière la solution</h2>
+
+      <h3>Le contexte</h3>
+      <p class="small">
+        Une PME avec un site vitrine ou e-commerce est exposée en permanence à Internet et devient une cible naturelle
+        (scan automatisé, bots, exploitation de failles, etc.).
+      </p>
+
+      <ul>
+        <li>Attaques <strong>XSS</strong> (Cross-Site Scripting)</li>
+        <li><strong>Injections SQL</strong></li>
+        <li><strong>Bots</strong> (brute force, scraping, scan)</li>
+        <li>Reconnaissance & tentatives d’exploitation</li>
+      </ul>
+
+      <h3>La solution</h3>
+      <p>
+        CyberShield Network s’interpose comme un <strong>reverse proxy</strong> (bouclier applicatif) :
+        toutes les requêtes passent d’abord par la couche de protection avant d’atteindre votre site.
+      </p>
+
+      <h3>Comment ça fonctionne</h3>
+      <ul>
+        <li><strong>1) Couche entre Internet et le serveur</strong> : pas besoin de modifier le code.</li>
+        <li><strong>2) Analyse du trafic</strong> : URL, paramètres, formulaires, headers, comportements.</li>
+        <li><strong>3) Blocage automatique</strong> : autorise / bloque / journalise selon les règles.</li>
+        <li><strong>4) (Option) Intelligence collective</strong> : partage anonymisé d’indicateurs pour renforcer le réseau.</li>
+      </ul>
+
+      <h3>Exemple concret</h3>
+      <p>
+        Un bot lance des requêtes sur un formulaire pour tester des injections SQL.
+        CyberShield détecte les patterns, bloque les requêtes et limite le trafic anormal.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Sans modifier le code</span>
+        <span class="badge">Déploiement rapide</span>
+        <span class="badge">Protection XSS / SQLi</span>
+        <span class="badge">Anti-bots</span>
+        <span class="badge">Monitoring & logs</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="formulaire_cyber.html">Demande Cyber</a>
+        <a class="btn btn-secondary" href="contact.html">En parler</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>L’entreprise</h4>
+      <ul class="footer-list">
+        <li>swa.techh@gmail.com</li>
+        <li>+223 76 76 67 58</li>
+        <li>
+          <a href="https://www.linkedin.com/company/swa-tech-cyber/" target="_blank">
+            LinkedIn SWA Tech
+          </a>
+        </li>
+      </ul>
+      <div class="footer-social" aria-label="Réseaux sociaux SWA Tech">
+        <a class="pill" href="https://www.facebook.com/share/1BzyJE4JHP/?mibextid=wwXIfr" aria-disabled="true">Facebook</a>
+        <a class="pill" href="https://www.instagram.com/swa.techh?igsh=MXV3b3ZybWppN2YzNg%3D%3D&utm_source=qr" aria-disabled="true">Instagram</a>
+        <a class="pill" href="https://www.tiktok.com/@swa.techh?_r=1&_t=ZN-93SRP1aFBMk" aria-disabled="true">TikTok</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>La fondatrice</h4>
+      <ul class="footer-list">
+        <li><strong>Traoré Meyan Mariam</strong></li>
+        <li>traore.meyan.m@gmail.com</a></li>
+        <li>+33 6 88 78 26 28</a></li>
+        <li><a href="https://www.linkedin.com/in/meyan/" aria-disabled="true">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

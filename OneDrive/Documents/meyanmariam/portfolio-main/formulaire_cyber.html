@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demande Cyber | SWA Tech</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="theme-color" content="#061525" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html" aria-label="SWA Tech - Accueil">
+      <span class="brand-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2l7 4v6c0 5-3.5 9.4-7 10-3.5-.6-7-5-7-10V6l7-4z" stroke="white" stroke-width="1.6" opacity=".95"/>
+          <path d="M8.2 12.2l2.3 2.3 5.3-5.3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>
+        SWA Tech
+        <small>Web • Apps • Cybersécurité & Monitoring</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="">Accueil</a><a href="offres.html" class="">Site web</a><a href="formation_site.html" class="">Formations</a><a href="cybersecurite.html" class="">Cybersécurité</a><a href="a_propos.html" class="">À propos</a><a href="contact.html" class="">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <div class="kicker">🛡️ Devis cyber</div>
+      <h1>Demande Cyber — Cybersécurité & Monitoring</h1>
+      <p>Remplis ce formulaire pour que je comprenne ton environnement et que je propose un diagnostic / sécurisation / monitoring adapté.</p>
+      <div class="actions">
+        <a class="btn btn-secondary" href="cybersecurite.html">Voir l’offre</a>
+        <a class="btn btn-outline" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="form-shell col-8">
+      <form id="cyberForm">
+        <h2 style="margin-top:0;">Informations client</h2>
+
+        <label for="prenom">Prénom *</label>
+        <input type="text" id="prenom" required>
+
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" required>
+
+        <label for="organisation">Organisation *</label>
+        <input type="text" id="organisation" required placeholder="Nom du commerce / association / entreprise">
+
+        <label for="typeOrg">Type d’organisation *</label>
+        <select id="typeOrg" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Commerçant</option>
+          <option>Association</option>
+          <option>Entreprise</option>
+          <option>Autre</option>
+        </select>
+
+        <label for="telephone">Numéro (WhatsApp) *</label>
+        <input type="tel" id="telephone" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" required>
+
+        <h2 style="margin-top:22px;">Périmètre à protéger</h2>
+
+        <label for="perimetre">Que souhaites-tu sécuriser ? *</label>
+        <select id="perimetre" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Site web vitrine</option>
+          <option>E-commerce</option>
+          <option>Application web</option>
+          <option>Serveur / VPS</option>
+          <option>Réseau interne (Wi-Fi, box, postes)</option>
+          <option>Messagerie / comptes (Google/Microsoft)</option>
+          <option>Autre</option>
+        </select>
+
+        <label for="url">URL / domaine (si site ou application)</label>
+        <input type="text" id="url" placeholder="ex: https://monsite.com">
+
+        <label for="techno">Technologie / CMS</label>
+        <select id="techno">
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>WordPress</option>
+          <option>PrestaShop</option>
+          <option>Shopify</option>
+          <option>Wix</option>
+          <option>Webflow</option>
+          <option>Sur-mesure</option>
+          <option>Je ne sais pas</option>
+        </select>
+
+        <label for="hebergeur">Hébergement</label>
+        <input type="text" id="hebergeur" placeholder="OVH, Ionos, o2switch, AWS...">
+
+        <label for="criticite">Criticité de l’activité *</label>
+        <select id="criticite" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Faible (pas d’impact majeur si indisponible)</option>
+          <option>Moyenne (impact business, supportable)</option>
+          <option>Élevée (activité critique / perte CA)</option>
+        </select>
+
+        <h2 style="margin-top:22px;">Besoin principal</h2>
+
+        <label for="objectif">Objectif principal *</label>
+        <select id="objectif" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Test de vulnérabilités (diagnostic)</option>
+          <option>Sécurisation / corrections (hardening)</option>
+          <option>Monitoring + alertes</option>
+          <option>Pack complet (diagnostic + sécurisation + monitoring)</option>
+          <option>À discuter</option>
+        </select>
+
+        <label for="incident">As-tu déjà eu un incident ?</label>
+        <select id="incident">
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui (piratage / site indisponible)</option>
+          <option>Oui (spam / formulaires)</option>
+          <option>Oui (compte compromis)</option>
+          <option>Non</option>
+          <option>Je ne sais pas</option>
+        </select>
+
+        <label for="detailsIncident">Détails (si incident ou suspicion)</label>
+        <textarea id="detailsIncident" rows="3" placeholder="ex: redirections, lenteur, pubs, alertes navigateur..."></textarea>
+
+        <label for="priorites">Priorités (2-3 points)</label>
+        <textarea id="priorites" rows="3" placeholder="ex: empêcher piratage, éviter pannes, sécuriser comptes..."></textarea>
+
+        <h2 style="margin-top:22px;">Monitoring (si souhaité)</h2>
+
+        <label for="monitoringType">Sur quoi veux-tu des alertes ?</label>
+        <select id="monitoringType">
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Disponibilité (site/serveur down)</option>
+          <option>Certificat SSL (expiration)</option>
+          <option>Performances (lenteur)</option>
+          <option>Erreurs (ex: 500)</option>
+          <option>Suspicion (logs / tentatives)</option>
+          <option>Je ne sais pas</option>
+        </select>
+
+        <label for="canalAlerte">Canal d’alerte préféré</label>
+        <select id="canalAlerte">
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>WhatsApp</option>
+          <option>Email</option>
+          <option>WhatsApp + Email</option>
+        </select>
+
+        <label for="horaires">Plage horaire d’alerte</label>
+        <select id="horaires">
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Heures ouvrées</option>
+          <option>7j/7 (jour)</option>
+          <option>24/7</option>
+          <option>À discuter</option>
+        </select>
+
+        <h2 style="margin-top:22px;">Accès & autorisation</h2>
+
+        <label for="acces">Quels accès peux-tu fournir ? *</label>
+        <select id="acces" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Back-office / Admin du site</option>
+          <option>Accès hébergeur</option>
+          <option>FTP / SFTP</option>
+          <option>Accès serveur (SSH)</option>
+          <option>Aucun accès pour le moment</option>
+          <option>À discuter</option>
+        </select>
+
+        <label for="delais">Délais souhaités *</label>
+        <select id="delais" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Dès que possible</option>
+          <option>Cette semaine</option>
+          <option>Ce mois-ci</option>
+          <option>Pas urgent</option>
+        </select>
+
+        <label for="autorisation">Confirmation *</label>
+        <select id="autorisation" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>J’autorise SWA Tech à effectuer un diagnostic/scan sur mon périmètre</option>
+          <option>Je souhaite d’abord échanger avant tout test</option>
+        </select>
+
+        <p class="small" style="margin-top:10px;">
+          Important : les tests sont réalisés uniquement avec l’accord du propriétaire.
+        </p>
+
+        <label for="notes">Informations complémentaires</label>
+        <textarea id="notes" rows="4" placeholder="Contexte, contraintes, budget, etc."></textarea>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Envoyer sur WhatsApp</button>
+          <a class="btn btn-secondary" href="index.html">Retour accueil</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="card col-4">
+      <h2>Ce que tu reçois</h2>
+      <ul>
+        <li>Un diagnostic clair (priorités)</li>
+        <li>Des recommandations actionnables</li>
+        <li>Option sécurisation / monitoring</li>
+      </ul>
+      <div class="actions">
+        <a class="btn btn-secondary" href="cybersecurite.html">Offre cyber</a>
+        <a class="btn btn-outline" href="solutions-cyber.html">Solutions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  const form = document.getElementById("cyberForm");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    const phoneNumber = "33688782628";
+    const v = (id) => (document.getElementById(id).value || "").trim();
+
+    const message = `
+*Demande CYBER — SWA Tech*
+
+*Client*
+- Prénom : ${v("prenom")}
+- Nom : ${v("nom")}
+- Organisation : ${v("organisation")}
+- Type : ${v("typeOrg")}
+- Téléphone : ${v("telephone")}
+- Email : ${v("email")}
+
+*Périmètre*
+- À sécuriser : ${v("perimetre")}
+- URL / Domaine : ${v("url")}
+- Techno / CMS : ${v("techno")}
+- Hébergement : ${v("hebergeur")}
+- Criticité : ${v("criticite")}
+
+*Besoin principal*
+- Objectif : ${v("objectif")}
+- Incident : ${v("incident")}
+- Détails : ${v("detailsIncident")}
+- Priorités : ${v("priorites")}
+
+*Monitoring*
+- Alertes : ${v("monitoringType")}
+- Canal : ${v("canalAlerte")}
+- Horaires : ${v("horaires")}
+
+*Accès & autorisation*
+- Accès : ${v("acces")}
+- Délais : ${v("delais")}
+- Autorisation : ${v("autorisation")}
+
+*Compléments*
+- Notes : ${v("notes")}
+`.trim();
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, "_blank");
+  });
+})();
+</script>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>L’entreprise</h4>
+      <ul class="footer-list">
+        <li>swa.techh@gmail.com</li>
+        <li>+223 76 76 67 58</li>
+        <li>
+          <a href="https://www.linkedin.com/company/swa-tech-cyber/" target="_blank">
+            LinkedIn SWA Tech
+          </a>
+        </li>
+      </ul>
+      <div class="footer-social" aria-label="Réseaux sociaux SWA Tech">
+        <a class="pill" href="https://www.facebook.com/share/1BzyJE4JHP/?mibextid=wwXIfr" aria-disabled="true">Facebook</a>
+        <a class="pill" href="https://www.instagram.com/swa.techh?igsh=MXV3b3ZybWppN2YzNg%3D%3D&utm_source=qr" aria-disabled="true">Instagram</a>
+        <a class="pill" href="https://www.tiktok.com/@swa.techh?_r=1&_t=ZN-93SRP1aFBMk" aria-disabled="true">TikTok</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>La fondatrice</h4>
+      <ul class="footer-list">
+        <li><strong>Traoré Meyan Mariam</strong></li>
+        <li>traore.meyan.m@gmail.com</a></li>
+        <li>+33 6 88 78 26 28</a></li>
+        <li><a href="https://www.linkedin.com/in/meyan/" aria-disabled="true">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

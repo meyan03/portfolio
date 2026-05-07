@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demande de devis | SWA Tech</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="theme-color" content="#061525" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html" aria-label="SWA Tech - Accueil">
+      <span class="brand-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2l7 4v6c0 5-3.5 9.4-7 10-3.5-.6-7-5-7-10V6l7-4z" stroke="white" stroke-width="1.6" opacity=".95"/>
+          <path d="M8.2 12.2l2.3 2.3 5.3-5.3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>
+        SWA Tech
+        <small>Web • Apps • Cybersécurité & Monitoring</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="">Accueil</a><a href="offres.html" class="">Site web</a><a href="formation_site.html" class="">Formations</a><a href="cybersecurite.html" class="">Cybersécurité</a><a href="a_propos.html" class="">À propos</a><a href="contact.html" class="">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <div class="kicker">🧾 Devis site</div>
+      <h1>Demande de devis — Création de site web</h1>
+      <p>Remplis ce formulaire pour que je comprenne ton besoin et que je te propose une solution adaptée.</p>
+      <div class="actions">
+        <a class="btn btn-secondary" href="offres.html#tarifs">Voir les packs</a>
+        <a class="btn btn-outline" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="form-shell col-8">
+      <form id="questionnaireForm">
+        <label for="prenom">Prénom *</label>
+        <input type="text" id="prenom" required placeholder="Ex: Aïcha">
+
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" required placeholder="Ex: Diallo">
+
+        <label for="telephone">Numéro de téléphone (WhatsApp) *</label>
+        <input type="tel" id="telephone" required placeholder="+33 ... / +223 ...">
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" required placeholder="ex: nom@email.com">
+
+        <label for="objectif">Quel est l’objectif principal du site ? *</label>
+        <textarea id="objectif" rows="3" required placeholder="Ex: présenter mes services, vendre des produits..."></textarea>
+
+        <label for="cible">À qui s’adresse le site ? *</label>
+        <textarea id="cible" rows="2" required placeholder="Ex: clients locaux, entreprises, diaspora..."></textarea>
+
+        <label for="probleme">Quel problème le site doit-il résoudre ?</label>
+        <textarea id="probleme" rows="3" placeholder="Ex: manque de visibilité, prise de RDV difficile..."></textarea>
+
+        <label for="pages">Combien de pages souhaites-tu ?</label>
+        <input type="text" id="pages" placeholder="Ex: 1, 4, 6...">
+
+        <label for="textes">As-tu déjà les textes du site ? *</label>
+        <select id="textes" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui, j’ai déjà les textes</option>
+          <option>Non, je souhaite que vous les rédigiez</option>
+          <option>À discuter</option>
+        </select>
+
+        <label for="medias">As-tu des images / logo / vidéos ? *</label>
+        <select id="medias" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui</option>
+          <option>Non</option>
+          <option>Partiellement</option>
+        </select>
+
+        <label for="exemples">Exemples de sites que tu aimes (liens)</label>
+        <textarea id="exemples" rows="2" placeholder="Coller 1 à 3 liens"></textarea>
+
+        <label for="paiement">Paiement en ligne souhaité ? *</label>
+        <select id="paiement" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui</option>
+          <option>Non</option>
+        </select>
+
+        <label for="rdv">Prise de rendez-vous en ligne ? *</label>
+        <select id="rdv" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui</option>
+          <option>Non</option>
+        </select>
+
+        <label for="admin">Espace administrateur pour modifier le contenu ? *</label>
+        <select id="admin" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui</option>
+          <option>Non</option>
+        </select>
+
+        <label for="autre">D'autres fonctionnalités ? *</label>
+        <textarea id="autre" rows="3" required placeholder="Ex: blog, multi-langue, galerie, FAQ..."></textarea>
+
+        <label for="domaine">As-tu déjà un nom de domaine ? *</label>
+        <select id="domaine" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui</option>
+          <option>Non</option>
+        </select>
+
+        <label for="hebergement">As-tu déjà un hébergement ? *</label>
+        <select id="hebergement" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui</option>
+          <option>Non</option>
+        </select>
+
+        <label for="formation">Souhaites-tu une formation pour gérer le site après mise en ligne ? *</label>
+        <select id="formation" required>
+          <option value="" disabled selected>-- Sélectionne --</option>
+          <option>Oui</option>
+          <option>Non</option>
+          <option>À discuter</option>
+        </select>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Envoyer sur WhatsApp</button>
+          <a class="btn btn-secondary" href="index.html">Retour accueil</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="card col-4">
+      <h2>Conseil</h2>
+      <p class="small">
+        Si tu as déjà un logo, des images, ou des exemples de sites, prépare-les : ça accélère le devis et la mise en ligne.
+      </p>
+      <div class="actions">
+        <a class="btn btn-secondary" href="offres.html#tarifs">Voir les packs</a>
+        <a class="btn btn-outline" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  const form = document.getElementById("questionnaireForm");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const phoneNumber = "33688782628";
+
+    const v = (id) => (document.getElementById(id).value || "").trim();
+
+    const message = `
+*Demande de création de site web (SWA Tech)*
+
+*Client*
+- Prénom : ${v("prenom")}
+- Nom : ${v("nom")}
+- Téléphone : ${v("telephone")}
+- Email : ${v("email")}
+
+*Objectif*
+- Objectif : ${v("objectif")}
+- Cible : ${v("cible")}
+- Problème : ${v("probleme")}
+
+*Contenu*
+- Nombre de pages : ${v("pages")}
+- Textes : ${v("textes")}
+- Médias : ${v("medias")}
+- Exemples : ${v("exemples")}
+
+*Fonctionnalités*
+- Paiement : ${v("paiement")}
+- RDV : ${v("rdv")}
+- Admin : ${v("admin")}
+- Autre(s) : ${v("autre")}
+
+*Technique*
+- Domaine : ${v("domaine")}
+- Hébergement : ${v("hebergement")}
+
+*Formation*
+- Formation : ${v("formation")}
+`.trim();
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, "_blank");
+  });
+})();
+</script>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>L’entreprise</h4>
+      <ul class="footer-list">
+        <li>swa.techh@gmail.com</li>
+        <li>+223 76 76 67 58</li>
+        <li>
+          <a href="https://www.linkedin.com/company/swa-tech-cyber/" target="_blank">
+            LinkedIn SWA Tech
+          </a>
+        </li>
+      </ul>
+      <div class="footer-social" aria-label="Réseaux sociaux SWA Tech">
+        <a class="pill" href="https://www.facebook.com/share/1BzyJE4JHP/?mibextid=wwXIfr" aria-disabled="true">Facebook</a>
+        <a class="pill" href="https://www.instagram.com/swa.techh?igsh=MXV3b3ZybWppN2YzNg%3D%3D&utm_source=qr" aria-disabled="true">Instagram</a>
+        <a class="pill" href="https://www.tiktok.com/@swa.techh?_r=1&_t=ZN-93SRP1aFBMk" aria-disabled="true">TikTok</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>La fondatrice</h4>
+      <ul class="footer-list">
+        <li><strong>Traoré Meyan Mariam</strong></li>
+        <li>traore.meyan.m@gmail.com</a></li>
+        <li>+33 6 88 78 26 28</a></li>
+        <li><a href="https://www.linkedin.com/in/meyan/" aria-disabled="true">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
