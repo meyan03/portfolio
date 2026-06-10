@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Meyan – Cybersécurité & Cloud</title>
+    <title>Meyan Traoré — Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,14 +12,9 @@
     <div class="container header-inner">
         <div class="branding">
             <h1 class="site-title">
-                <a href="index.html">Portfolio de Meyan</a>
+                <a href="index.html">Meyan Traoré</a>
             </h1>
-            <p class="site-subtitle">
-            </p>
         </div>
-
-        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
-
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
@@ -34,155 +29,239 @@
     </div>
 </header>
 
-<main class="container">
+<main>
 
     <!-- HERO -->
-    <section class="hero">
-        <div>
-            <h1 class="hero-title">Structurer, sécuriser et faire évoluer les systèmes d’information</h1>
-
-            <p class="hero-subtitle">
-                Étudiante en MSc Architecture des Systèmes d’Information à EPITECH Paris,
-                spécialisée en cybersécurité.
-                <br><br>
-                Fondatrice de <strong>SWA Tech</strong> : Web, Apps & Cybersécurité.
-                J’accompagne entreprises et particuliers dans leur digitalisation
-                et la sécurisation de leurs plateformes.
-            </p>
+    <section class="hero" id="accueil">
+        <div class="container">
+            <h2 class="hero-title">Sécuriser et faire évoluer les <span class="accent">systèmes d'information</span></h2>
 
             <div class="hero-badges">
-                <span class="badge">Cybersécurité</span>
+                <span class="badge">SOC</span>
+                <span class="badge">GRC</span>
+                <span class="badge">DFIR</span>
                 <span class="badge">Cloud</span>
                 <span class="badge">DevSecOps</span>
-                <span class="badge">Réseaux (CCNA)</span>
-                <span class="badge">Entrepreneuriat Tech</span>
             </div>
-
-            <a href="contact.html" class="btn">Parlons de vos projets</a>
-            <a href="projets.html" class="btn" style="margin-left: 8px;">Voir mes réalisations</a>
-
+            <a href="#contact" class="btn">Me contacter</a>
+            <a href="#projets" class="btn ghost" style="margin-left:12px;">Voir mes projets</a>
         </div>
     </section>
 
-    <!-- QUICK GRID -->
-    <section class="quick-grid">
-
-        <div class="quick-card">
-            <h3>Profil</h3>
-            <p>
-                Parcours international avec une montée en compétences structurée
-                en cybersécurité, cloud et DevSecOps.
-            </p>
-            <ul>
-                <li>MSc Cybersécurité & Cloud – EPITECH Paris</li>
-                <li>Fondatrice de SWA Tech</li>
-                <li>Projets techniques & certifications</li>
-            </ul>
+    <!-- ABOUT -->
+    <section class="section" id="apropos">
+        <div class="container grid">
+            <div class="col-4 about-img">
+                <img src="moi.png" alt="Photo de Meyan Traoré">
+            </div>
+            <div class="col-6">
+                <p class="section-label">À propos</p>
+                <h3 class="section-title">Qui suis-je ?</h3>
+                <p>
+                    Rigoureuse et méthodique, je m'intéresse particulièrement à la
+                    surveillance des menaces, à la détection d'incidents et à la
+                    gouvernance de la sécurité. Ma formation en cybersécurité
+                    s'appuie sur des mises en situation concrètes.
+                </p>
+                <p>
+                    Curieuse et investie dans l'amélioration continue, je me forme
+                    régulièrement afin de renforcer ma capacité à détecter,
+                    analyser et documenter les menaces dans un environnement SOC/GRC.
+                </p>
+                <p>
+                    Fondatrice de <a class="link" href="https://www.swa-tech.fr/" target="_blank" rel="noopener"><strong>SWA Tech</strong></a>,
+                    j'accompagne entreprises et particuliers dans leur digitalisation et la sécurisation de leurs plateformes.
+                    Je suis également membre de <a class="link" href="https://www.linkedin.com/company/ladies-in-cybersecurity-licy/" target="_blank" rel="noopener"><strong>Ladies in Cybersecurity</strong></a>,
+                    un collectif qui promeut la place des femmes dans la cybersécurité.
+                </p>
+            </div>
         </div>
-
-        <div class="quick-card">
-            <h3>Domaines techniques</h3>
-            <ul>
-                <li>Réseaux & protocoles (CCNA)</li>
-                <li>Infrastructure as Code (Terraform, Ansible)</li>
-                <li>Cloud & conteneurs (Azure, Docker)</li>
-                <li>CI/CD & pratiques DevSecOps</li>
-                <li>Sécurité : IAM, hardening, analyse de logs</li>
-            </ul>
-        </div>
-
-        <div class="quick-card">
-            <h3>En résumé</h3>
-            <p>
-                Je développe une expertise progressive en cybersécurité (formation, certifications, projets techniques, missions concrètes) couplée à des compétences en management (formation, entrepreneuriat, gestion de projet et pilotage stratégique).
-            </p>
-            <a href="projets.html" class="btn">Voir mes projets</a>
-        </div>
-
     </section>
 
-    <!-- SWA TECH -->
-    <section class="section-card">
-        <h2>SWA Tech : Web, Apps & Sécurité</h2>
-        <p>
-            SWA Tech est mon initiative entrepreneuriale dédiée à la création et à
-            la sécurisation des plateformes web et e-commerce.
-        </p>
+        <!-- EXPERIENCES CLES -->
+    <section class="section" id="experiences">
+        <div class="container">
+            <p class="section-label">Parcours</p>
+            <h2 class="section-title">Expériences</h2>
+            <p style="margin-bottom:24px"><a class="link" style="color:var(--accent); font-weight:700; text-decoration:none" href="experiences.html">Voir toutes mes expériences →</a></p>
+            <div class="grid">
 
-        <ul>
-            <li>Création de sites vitrines et e-commerce sécurisés</li>
-            <li>Migration et sécurisation de plateformes</li>
-            <li>Audit de sécurité & bonnes pratiques DevSecOps</li>
-            <li>Supervision et monitoring (Zabbix, Docker, Cloud)</li>
-            <li>Formations pratiques et accompagnement personnalisé</li>
-        </ul>
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">SOC / GRC</span>
+                        <h3>Analyste Cybersécurité</h3>
+                        <p>ISMACORP, Mali — Surveillance des alertes (SOC, logs, firewall), gestion des vulnérabilités, contribution au SMSI ISO 27001 et rédaction de rapports techniques.</p>
+                    </div>
+                </div>
 
-        <p>
-            Approche : sécurité dès la conception, documentation structurée
-            et accompagnement technique orienté autonomie client.
-        </p>
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">Audit</span>
+                        <h3>Stagiaire en Cybersécurité</h3>
+                        <p>Orange Mali, Division Sécurité — Audits de vulnérabilités (Nmap, DVWA), comparaison de scanners et solutions de pentesting, propositions de remédiation.</p>
+                    </div>
+                </div>
 
-        <a href="https://swa-tech.page.gd" target="_blank" class="btn">
-            Voir SWA Tech
-        </a>
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">DevOps / Infra</span>
+                        <h3>Administrateur Système & Réseau, DevOps</h3>
+                        <p>Opase, Issy-les-Moulineaux — Supervision Zabbix, durcissement des serveurs (nftables, Fail2Ban, rkhunter), automatisation Ansible & CI/CD.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <!-- APPORT -->
-    <section class="section-card">
-        <h2>Ce que je peux apporter</h2>
-        <ul>
-            <li>Une approche structurée des projets (roadmap, priorisation, documentation).</li>
-            <li>Capacité à traduire des besoins métiers en solutions techniques sécurisées.</li>
-            <li>Rigueur, autonomie et culture de l’amélioration continue.</li>
-        </ul>
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+        <div class="container">
+            <p class="section-label">Réalisations</p>
+            <h2 class="section-title">Voir la présentation de quelques projets </h2>
+            <p style="margin-bottom:24px"><a class="link" style="color:var(--accent); font-weight:700; text-decoration:none" href="projets.html">Voir tous mes projets →</a></p>
+            <div class="grid">
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">DFIR</span>
+                        <h3>Analyse DFIR</h3>
+                        <p>Investigation de 3 scénarios réalistes : analyse de trafic réseau (PCAP), forensics mémoire (dump RAM) et reverse engineering d'un binaire malveillant, avec identification des IoC, reconstruction de la timeline d'attaque et rédaction d'un rapport DFIR professionnel.</p>
+                        <a class="link" href="https://presenti.ai/app/share/CAE.IAEqED3j1J6amXMsYw5lvubz6-8wAkABSgozNTYyMTc0MDg0?invite_code=Crv8nqDA" target="_blank" rel="noopener">Voir la présentation →</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">GRC</span>
+                        <h3>CyberQuest</h3>
+                        <p>Développement d’un jeu interactif et éducatif permettant aux débutants en cybersécurité d’apprendre de manière ludique et progressive. Le jeu comporte plusieurs niveaux abordant différents aspects de la cybersécurité. </p>
+                        <a class="link" href="https://gamma.app/docs/CyberQuest-:-Apprendre-la-Cybersecurite-en-Jouant-pxowuoird8aqx43?following_id=4ij6twmllnrk9oq&follow_on_start=true" target="_blank" rel="noopener">Voir la présentation →</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">Sécurité Offensive</span>
+                        <h3>Conception : outil C2 furtif</h3>
+                        <p>Projet scolaire consistant à concevoir et développer, un prototype d’outil de Command & Control (C2) furtif </p>
+                        <a class="link" href="https://www.canva.com/design/DAHDqdChtTY/L7zE7dAlLtLNaybpTvMu_g/edit?utm_content=DAHDqdChtTY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Voir la présentation →</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">Cybersécurité Web</span>
+                        <h3>Plateforme intelligente de suivi du diabète</h3>
+                        <p>Application web & mobile de monitoring du diabète en temps réel : centralisation des données (glycémie, repas, activité), dashboards interactifs, alertes en temps réel et assistance intelligente pour améliorer le suivi patient et la prise de décision. </p>
+                        <a class="link" href="https://docs.google.com/presentation/d/1YMmz_DzJt4cB1g84cappgigVOAFLK4GOHGap9GanHms/edit?slide=id.g3e56bbe93ac_0_195#slide=id.g3e56bbe93ac_0_195" target="_blank" rel="noopener">Voir la présentation →</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">DevOps</span>
+                        <h3>Développement web et mobile</h3>
+                        <p>Développement d’un système DevOps, web et mobile pour une chaîne de supermarchés, visant à optimiser l’expérience utilisateur et la gestion des stocks.</p>
+                        <a class="link" href="https://www.canva.com/design/DAGh6NAlIjI/149iWVC3fKBYKi-wWiHNWQ/edit?utm_content=DAGh6NAlIjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Voir la présentation →</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">Transformation Digitale</span>
+                        <h3>Système de Gestion des Déchets</h3>
+                        <p>Transformation Digitale : Le projet modernise la gestion des déchets en ville, facilitant la coordination entre citoyens et services municipaux grâce aux technologies numériques.</p>
+                        <a class="link" href="https://www.canva.com/design/DAGe8D-FEPY/zmvLcdWAmqsQfUfgVRNIow/edit?utm_content=DAGe8D-FEPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Voir la présentation →</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
     </section>
 
-    <!-- REFERENCES -->
-    <section class="section-card">
-        <h2>Références professionnelles</h2>
-        <p>
-            Personnes pouvant attester de mon sérieux,
-            de mes compétences techniques et de mon engagement.
-        </p>
-
-        <ul class="references-list">
-
-            <li>
-                <strong>Hassen Chehibi</strong><br>
-                <em>Directeur Informatique – FacNote</em><br>
-                📧 <a href="mailto:hassen.chehibi@facnote.com">hassen.chehibi@facnote.com</a>
-            </li>
-            <br>
-
-            <li>
-                <strong>Oumar Touré</strong><br>
-                <em>CISO / RSSI – Orange Mali</em><br>
-                📧 <a href="mailto:topioumar@gmail.com">oumar.toure2@orangemali.com</a>
-            </li>
-            <br>
-
-            <li>
-                <strong>Antoine Zagnoni</strong><br>
-                <em>Directeur Pédagogique Adjoint – EPITECH Paris</em><br>
-                📧 <a href="mailto:antoine1.zagnoni@epitech.eu">antoine1.zagnoni@epitech.eu</a>
-            </li>
-            <br>
+    <!-- COMPETENCES -->
+    <section class="section" id="competences">
+        <div class="container">
+            <p class="section-label">Savoir-faire</p>
+            <h2 class="section-title">Compétences</h2>
+            <div class="skill-list">
+                <span class="badge">Cybersécurité offensive & défensive</span>
+                <span class="badge">DFIR</span>
+                <span class="badge">Réseaux (CCNA)</span>
+                <span class="badge">Cloud (Azure)</span>
+                <span class="badge">Conteneurs (Docker)</span>
+                <span class="badge">Infrastructure as Code</span>
+                <span class="badge">CI/CD & DevSecOps</span>
+                <span class="badge">Analyse de logs & monitoring</span>
+            </div>
+            <p style="margin-top:24px"><a class="link" style="color:var(--accent); font-weight:700; text-decoration:none" href="competences.html">Voir toutes mes compétences →</a></p>
+        </div>
+    </section>
 
 
-        </ul>
+    <!-- CERTIFICATIONS CLES -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <p class="section-label">Certifications</p>
+            <h2 class="section-title">Certifications</h2>
+            <p style="margin-bottom:24px"><a class="link" style="color:var(--accent); font-weight:700; text-decoration:none" href="certifications.html">Voir toutes mes certifications →</a></p>
+            <div class="grid">
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">Réseaux</span>
+                        <h3>CCNA 1 – Introduction to Networks</h3>
+                        <p>Cisco — Modèles OSI/TCP-IP, IPv4/IPv6, configuration de base des switches et routeurs.</p>
+                        <p><a class="btn" href="CCNA-_Introduction_to_Networks_certificate_meyanmariam04-gmail-com_a56a911a-e518-4f9b-919f-57178bb7f3d4.pdf" target="_blank">Voir le certificat</a></p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">GRC</span>
+                        <h3>Cyber Threat Management</h3>
+                        <p>Cisco — Politiques et gouvernance, évaluation des vulnérabilités, gestion des risques, Cyber Kill Chain, réponse aux incidents.</p>
+                        <p><a class="btn" href="Cyber_Threat_Management_certificate_meyanmariam04-gmail-com_f87cb6a7-6621-4c91-868f-6b94b1079bab.pdf" target="_blank">Voir le certificat</a></p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <span class="tag">Blue Team</span>
+                        <h3>XWorm Blue Team Lab</h3>
+                        <p>CyberDefenders — Investigation d'un scénario malware : détection d'activités malveillantes, analyse réseau et réponse à incident.</p>
+                        <p><a class="btn" href="https://cyberdefenders.org/blueteam-ctf-challenges/achievements/meyan.traore/xworm/" target="_blank" rel="noopener">Voir le certificat</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <p class="section-label">Contact</p>
+            <h2 class="section-title">Discutons</h2>
+            <p>Ouverte aux opportunités, collaborations et échanges techniques.</p>
+            <div class="contact-links">
+                <a class="btn" href="mailto:meyanmariam04@gmail.com">Envoyer un email</a>
+                <a class="btn ghost" href="https://www.linkedin.com/in/meyan/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
     </section>
 
 </main>
 
 <footer>
-    <div class="container footer-inner">
-        <p>
-            <a href="https://meyan03.github.io/portfolio/" target="_blank">Portfolio en ligne</a> ·
-            <a href="https://www.linkedin.com/in/meyan/" target="_blank">LinkedIn</a> ·
-            <a href="https://swa-tech.page.gd" target="_blank">SWA Tech</a>
-        </p>
+    <div class="container">
+        <p>&copy; 2026 Meyan Traoré</p>
     </div>
 </footer>
 
+<script src="assets/scripts.js"></script>
 </body>
 </html>

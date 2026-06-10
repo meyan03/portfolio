@@ -1,43 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Compétences – Portfolio de Meyan</title>
-    <link rel="stylesheet" href="css/style.css"/>
-
-    <!-- Styles légers spécifiques à cette page -->
-    <style>
-        .skills-list {
-            margin-left: 18px;
-            list-style-type: disc;
-            padding-left: 4px;
-            font-size: 0.95rem;
-            color: #374151;
-        }
-
-        .skills-list li {
-            margin-bottom: 4px;
-        }
-
-        .skills-section-title {
-            margin-bottom: 6px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences — Meyan Traoré</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-competences">
 <header>
     <div class="container header-inner">
         <div class="branding">
-            <h1 class="site-title">
-                <a href="index.html">Portfolio de Meyan</a>
-            </h1>
-            <p class="site-subtitle">
-            </p>
+            <h1 class="site-title"><a href="index.html">Meyan Traoré</a></h1>
         </div>
-
-        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
-
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -54,133 +28,222 @@
 
 <main class="container">
     <div class="page-title">
-        <h1>Mes Compétences</h1>
+        <h1>Compétences</h1>
         <p>Compétences en cybersécurité, cloud, développement, DevOps et gestion de projet.</p>
     </div>
 
-    <!-- ======================= CYBER / AUDIT / DEVOPS ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Cybersécurité, Audit &amp; DevOps</h2>
-        <ul class="skills-list">
-            
-            <!-- Ajouts T-SEC 902 -->
-            <li><strong>Network Forensics :</strong> analyse PCAP, détection C2/exfiltration, extraction IoC (IP/domaines/URI), Wireshark/tcpdump/NetworkMiner.</li>
-            <li><strong>Memory Forensics :</strong> artefacts RAM (processus, modules, connexions, injection, persistance), Volatility/Rekall.</li>
-            <li><strong>Malware Analysis :</strong> RE statique/dynamique, compréhension des capacités, extraction IoC (hash/chemins/strings), Ghidra/Cutter.</li>
-            <li><strong>Timeline &amp; Reporting :</strong> reconstruction d’attaque, rapport DFIR professionnel (preuves, IoC, recommandations).</li>
-        
-            <li><strong>Audit &amp; analyse de vulnérabilités :</strong> Nmap, Nessus, Nexpose, OpenVAS.</li>
-            <li><strong>Comparaison &amp; utilisation d’outils :</strong> scanners (Nessus, Nexpose, OpenVAS), sandbox (Windows Sandbox, Kata, Qubes OS, Cuckoo, FireEye, VMRay), outils de pentest (Patrowl, Astra Pentest, Pentest-Tools, Sxipher).</li>
-            <li><strong>Audit pratique :</strong> tests sur environnements vulnérables (DVWA, Metasploitable), exploitation de failles (injection SQL, XSS, brute force, upload de fichiers malveillants).</li>
-            <li><strong>Rapports techniques :</strong> rédaction claire et exploitable pour équipes techniques et managers.</li>
+    <section class="section">
+        <h2 class="section-title">Cybersécurité, Audit & DevOps</h2>
 
-            <!-- Ajouts T-SEC 901 -->
-            <li><strong>Sécurité offensive (cadre pédagogique) :</strong> conception et simulation d’intrusions avancées pour évaluer la détection d’un SOC.</li>
-            <li><strong>Command &amp; Control (C2) :</strong> prototypage d’outils C2, communication chiffrée, shells distants, résilience, OpSec.</li>
+        <div class="grid">
+            <div class="col-6">
+                <div class="card">
+                    <h3>🔎 Forensics & DFIR</h3>
+                    <ul>
+                        <li><strong>Network Forensics :</strong> analyse PCAP, détection C2/exfiltration, extraction IoC (IP/domaines/URI), Wireshark/tcpdump/NetworkMiner.</li>
+                        <li><strong>Memory Forensics :</strong> artefacts RAM (processus, modules, connexions, injection, persistance), Volatility/Rekall.</li>
+                        <li><strong>Malware Analysis :</strong> RE statique/dynamique, compréhension des capacités, extraction IoC (hash/chemins/strings), Ghidra/Cutter.</li>
+                        <li><strong>Timeline & Reporting :</strong> reconstruction d'attaque, rapport DFIR professionnel (preuves, IoC, recommandations).</li>
+                    </ul>
+                </div>
+            </div>
 
-            <!-- Protection & Infra -->
-            <li><strong>Sécurité des infrastructures :</strong> nftables, Fail2Ban, Apache, rkhunter.</li>
-            <li><strong>Maintien d’environnements sécurisés :</strong> automatisation des patchs, surveillance systemd.</li>
+            <div class="col-6">
+                <div class="card">
+                    <h3>🧪 Audit & Pentest</h3>
+                    <ul>
+                        <li><strong>Audit & analyse de vulnérabilités :</strong> Nmap, Nessus, Nexpose, OpenVAS.</li>
+                        <li><strong>Comparaison & utilisation d'outils :</strong> scanners (Nessus, Nexpose, OpenVAS), sandbox (Windows Sandbox, Kata, Qubes OS, Cuckoo, FireEye, VMRay), outils de pentest (Patrowl, Astra Pentest, Pentest-Tools, Sxipher).</li>
+                        <li><strong>Audit pratique :</strong> tests sur environnements vulnérables (DVWA, Metasploitable), exploitation de failles (injection SQL, XSS, brute force, upload de fichiers malveillants).</li>
+                        <li><strong>Rapports techniques :</strong> rédaction claire et exploitable pour équipes techniques et managers.</li>
+                    </ul>
+                </div>
+            </div>
 
-            <!-- CI/CD & Monitoring -->
-            <li><strong>Automatisation &amp; CI/CD :</strong> Ansible, Drone CI, GitLab CI/CD.</li>
-            <li><strong>Monitoring &amp; supervision :</strong> Zabbix, Portainer.</li>
-            <li><strong>Conteneurs :</strong> Docker, Docker Compose.</li>
+            <div class="col-6">
+                <div class="card">
+                    <h3>🎯 Sécurité offensive</h3>
+                    <ul>
+                        <li><strong>Sécurité offensive (cadre pédagogique) :</strong> conception et simulation d'intrusions avancées pour évaluer la détection d'un SOC.</li>
+                        <li><strong>Command & Control (C2) :</strong> prototypage d'outils C2, communication chiffrée, shells distants, résilience, OpSec.</li>
+                        <li><strong>Labs de cybersécurité sur Azure :</strong> déploiement et exploitation de VM Windows pour tests offensifs/défensifs.</li>
+                    </ul>
+                </div>
+            </div>
 
-            <!-- Azure -->
-            <li><strong>Labs de cybersécurité sur Azure :</strong> déploiement et exploitation de VM Windows pour tests offensifs/défensifs.</li>
-        </ul>
+            <div class="col-6">
+                <div class="card">
+                    <h3>🔧 Sécurité défensive & DevOps</h3>
+                    <ul>
+                        <li><strong>Sécurité des infrastructures :</strong> nftables, Fail2Ban, Apache, rkhunter.</li>
+                        <li><strong>Maintien d'environnements sécurisés :</strong> automatisation des patchs, surveillance systemd.</li>
+                        <li><strong>Automatisation & CI/CD :</strong> Ansible, Drone CI, GitLab CI/CD.</li>
+                        <li><strong>Monitoring & supervision :</strong> Zabbix, Portainer.</li>
+                        <li><strong>Conteneurs :</strong> Docker, Docker Compose.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ======================= PROGRAMMATION ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Programmation</h2>
-        <ul class="skills-list">
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>PHP</li>
-            <li>Elixir</li>
-            <li>OCaml</li>
-            <li>R</li>
-            <li><strong>Programmation réseau :</strong> communications client/serveur, sockets, protocoles pour outils de sécurité.</li>
-            <li><strong>Programmation systèmes :</strong> appels système (syscalls), gestion des processus et privilèges en environnement de lab.</li>
-        </ul>
+    <section class="section">
+        <h2 class="section-title">Programmation</h2>
+        <div class="grid">
+            <div class="col-6">
+                <div class="card">
+                    <h3>📚 Langages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>PHP</li>
+                        <li>Elixir</li>
+                        <li>OCaml</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h3>🔩 Réseau & systèmes</h3>
+                    <ul>
+                        <li><strong>Programmation réseau :</strong> communications client/serveur, sockets, protocoles pour outils de sécurité.</li>
+                        <li><strong>Programmation systèmes :</strong> appels système (syscalls), gestion des processus et privilèges en environnement de lab.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ======================= WEB & BDD ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Développement web &amp; bases de données</h2>
-        <ul class="skills-list">
-            <li>HTML, CSS</li>
-            <li>SQL</li>
-            <li><strong>Frameworks :</strong> Django, Phoenix, Vue.js, React.js.</li>
-            <li><strong>Bases de données :</strong> PostgreSQL, MySQL.</li>
-            <li><strong>Sécurisation des services hébergés :</strong> bonnes pratiques de configuration, durcissement, gestion des accès.</li>
-        </ul>
+    <section class="section">
+        <h2 class="section-title">Développement web & bases de données</h2>
+        <div class="grid">
+            <div class="col-6">
+                <div class="card">
+                    <h3>🧩 Frameworks & BDD</h3>
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>SQL</li>
+                        <li><strong>Frameworks :</strong> Django, Phoenix, Vue.js, React.js.</li>
+                        <li><strong>Bases de données :</strong> PostgreSQL, MySQL.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h3>🔒 Sécurisation des services</h3>
+                    <ul>
+                        <li><strong>Sécurisation des services hébergés :</strong> bonnes pratiques de configuration, durcissement, gestion des accès.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ======================= INFRA & RÉSEAUX ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Infrastructure &amp; réseau</h2>
-        <ul class="skills-list">
-            <li>Configuration et gestion des services hébergés.</li>
-            <li>DNS dynamique et gestion des certificats.</li>
-            <li>Isolation des services en microservices.</li>
-        </ul>
+    <section class="section">
+        <h2 class="section-title">Infrastructure & réseau</h2>
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <ul>
+                        <li>Configuration et gestion des services hébergés.</li>
+                        <li>DNS dynamique et gestion des certificats.</li>
+                        <li>Isolation des services en microservices.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ======================= AUTOMATISATION & SCRIPTING ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Automatisation, scripting &amp; tooling sécurité</h2>
-        <ul class="skills-list">
-            <li><strong>Scripting Python :</strong> automatisation de tâches techniques, analyse de logs, traitement de données et outillage sécurité.</li>
-            <li><strong>Selenium WebDriver :</strong> automatisation de scénarios web, tests applicatifs, interaction avec interfaces dynamiques.</li>
-            <li><strong>Extraction de données web :</strong> collecte structurée de données dynamiques et génération de rapports automatisés.</li>
-            <li><strong>Surveillance automatisée :</strong> suivi d’indicateurs, alerting et reporting pour environnements techniques.</li>
-        </ul>
+    <section class="section">
+        <h2 class="section-title">Automatisation, scripting & tooling sécurité</h2>
+        <div class="grid">
+            <div class="col-6">
+                <div class="card">
+                    <h3>🐍 Scripting & automatisation</h3>
+                    <ul>
+                        <li><strong>Scripting Python :</strong> automatisation de tâches techniques, analyse de logs, traitement de données et outillage sécurité.</li>
+                        <li><strong>Surveillance automatisée :</strong> suivi d'indicateurs, alerting et reporting pour environnements techniques.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h3>🌐 Tests & extraction web</h3>
+                    <ul>
+                        <li><strong>Selenium WebDriver :</strong> automatisation de scénarios web, tests applicatifs, interaction avec interfaces dynamiques.</li>
+                        <li><strong>Extraction de données web :</strong> collecte structurée de données dynamiques et génération de rapports automatisés.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ======================= OUTILS ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Outils &amp; environnements de développement</h2>
-        <ul class="skills-list">
-            <li>Visual Studio Code.</li>
-            <li>Jupyter.</li>
-            <li>GitLab, GitHub.</li>
-            <li>GitHub Actions, GitLab CI/CD.</li>
-            <li><strong>Tests &amp; déploiement :</strong> Postman, Docker.</li>
-        </ul>
+    <section class="section">
+        <h2 class="section-title">Outils & environnements de développement</h2>
+        <div class="grid">
+            <div class="col-6">
+                <div class="card">
+                    <h3>🖊️ Éditeurs & notebooks</h3>
+                    <ul>
+                        <li>Visual Studio Code.</li>
+                        <li>Jupyter.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h3>🚀 Versioning & CI/CD</h3>
+                    <ul>
+                        <li>GitLab, GitHub.</li>
+                        <li>GitHub Actions, GitLab CI/CD.</li>
+                        <li><strong>Tests & déploiement :</strong> Postman, Docker.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ======================= SYSTÈMES ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Systèmes d’exploitation</h2>
-        <ul class="skills-list">
-            <li>Windows &amp; Linux (Ubuntu, Debian).</li>
-            <li>Architectures ARM (Advanced RISC Machines).</li>
-            <li>Sécurisation et maintenance des environnements de production.</li>
-        </ul>
+    <section class="section">
+        <h2 class="section-title">Systèmes d'exploitation</h2>
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <ul>
+                        <li>Windows & Linux (Ubuntu, Debian).</li>
+                        <li>Architectures ARM (Advanced RISC Machines).</li>
+                        <li>Sécurisation et maintenance des environnements de production.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ======================= GESTION PROJET ======================= -->
-    <section class="section-card">
-        <h2 class="skills-section-title">Gestion de projet &amp; collaboration</h2>
-        <ul class="skills-list">
-            <li>Analyse des besoins &amp; planification.</li>
-            <li>Organisation et gestion des dépendances.</li>
-            <li>Travail en équipe &amp; collaboration agile.</li>
-            <li>Rédaction de rapports techniques &amp; documentation sécurisée.</li>
-        </ul>
+    <section class="section">
+        <h2 class="section-title">Gestion de projet & collaboration</h2>
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <ul>
+                        <li>Analyse des besoins & planification.</li>
+                        <li>Organisation et gestion des dépendances.</li>
+                        <li>Travail en équipe & collaboration agile.</li>
+                        <li>Rédaction de rapports techniques & documentation sécurisée.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
 <footer>
-    <div class="container footer-inner">
-        <p><a href="index.html">Retour à la page principale</a></p>
+    <div class="container">
+        <p>&copy; 2026 Meyan Traoré</p>
     </div>
 </footer>
+
+<script src="assets/scripts.js"></script>
 </body>
 </html>

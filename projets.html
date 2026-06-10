@@ -1,96 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Projets – Portfolio de Meyan</title>
-    <link rel="stylesheet" href="css/style.css"/>
-
-    <!-- Styles spécifiques pour les filtres et les cartes projet -->
-    <style>
-        .filters {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 16px;
-        }
-
-        .filter-btn {
-            padding: 8px 14px;
-            border-radius: 999px;
-            border: 1px solid #0a66c2;
-            background: #ffffff;
-            color: #0a66c2;
-            font-size: 0.85rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
-        }
-
-        .filter-btn:hover {
-            background: #0a66c2;
-            color: #ffffff;
-            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
-            transform: translateY(-1px);
-        }
-
-        .filter-btn.active {
-            background: #0a66c2;
-            color: #ffffff;
-        }
-
-        .project {
-            background-color: #ffffff;
-            border-radius: 16px;
-            padding: 18px 18px 16px;
-            margin-bottom: 16px;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-            border: 1px solid #e5e7eb;
-            transition: box-shadow 0.2s ease, transform 0.1s ease, background 0.15s ease;
-            font-size: 0.95rem;
-            color: #374151;
-        }
-
-        .project h2 {
-            color: #0a66c2;
-            font-size: 1.1rem;
-            margin-bottom: 6px;
-        }
-
-        .project p {
-            margin: 3px 0;
-        }
-
-        .project ul {
-            margin-top: 6px;
-            margin-bottom: 4px;
-        }
-
-        .project:hover {
-            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
-            transform: translateY(-1px);
-            background: #ffffff;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Meyan Traoré</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-projets">
 <header>
     <div class="container header-inner">
         <div class="branding">
-            <h1 class="site-title">
-                <a href="index.html">Portfolio de Meyan</a>
-            </h1>
-            <p class="site-subtitle">
-            </p>
+            <h1 class="site-title"><a href="index.html">Meyan Traoré</a></h1>
         </div>
-
-        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
-
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -111,120 +32,59 @@
         <p>Projets universitaires, techniques et de transformation digitale, avec un focus cybersécurité, cloud et DevOps.</p>
     </div>
 
-    <section class="section-card">
-        <h2>Filtrer les projets</h2>
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">Tous</button>
-            <button class="filter-btn" data-filter="cybersecurite">Cybersecurite</button>
-            <button class="filter-btn" data-filter="cloud">Cloud</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="devops">DevOps</button>
-            <button class="filter-btn" data-filter="management">Management</button>
-            <button class="filter-btn" data-filter="transformation digitale">Transformation Digitale</button>
-            <button class="filter-btn" data-filter="universitaire">Universitaire</button>
-        </div>
-    </section>
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="cybersecurite">Cybersécurité</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="devops">DevOps</button>
+        <button class="filter-btn" data-filter="management">Management</button>
+        <button class="filter-btn" data-filter="transformation digitale">Transformation Digitale</button>
+        <button class="filter-btn" data-filter="universitaire">Universitaire</button>
+    </div>
 
-    <section class="section-card">
-        <h2>Mes projets</h2>
-
-        <!-- TEAM FORTRESS / DFIR -->
-        <div class="project" data-category="cybersecurite universitaire">
-            <h2>TEAM FORTRESS – DFIR : Network Forensics, Memory Forensics & Malware Reverse Engineering</h2>
-            <p><strong>Date :</strong> Mars 2026 – Juin 2026</p>
-            <p><strong>Organisation :</strong> EPITECH – Projet DFIR (Team Fortress)</p>
-            <p><strong>Rôle :</strong> Analyste DFIR / Incident Response (cadre pédagogique)</p>
-
-            <p><strong>Description :</strong><br/>
-                Projet universitaire de Digital Forensics &amp; Incident Response (DFIR) consistant à investiguer
-                3 scénarios réalistes : analyse de trafic réseau (PCAP), analyse mémoire (dump RAM) et reverse engineering
-                d’un binaire malveillant, afin d’identifier les IoC, reconstruire la timeline de l’attaque et produire
-                un rapport DFIR professionnel.
-            </p>
-
+    <section>
+        <div class="item-card" data-category="cybersecurite universitaire">
+            <h3>TEAM FORTRESS – DFIR : Network Forensics, Memory Forensics & Malware Reverse Engineering</h3>
+            <p><strong>Date :</strong> Mars 2026 – Juin 2026 · <strong>Organisation :</strong> EPITECH – Projet DFIR (Team Fortress) · <strong>Rôle :</strong> Analyste DFIR / Incident Response (cadre pédagogique)</p>
+            <p><strong>Description :</strong> Projet universitaire de Digital Forensics & Incident Response (DFIR) consistant à investiguer 3 scénarios réalistes : analyse de trafic réseau (PCAP), analyse mémoire (dump RAM) et reverse engineering d'un binaire malveillant, afin d'identifier les IoC, reconstruire la timeline de l'attaque et produire un rapport DFIR professionnel.</p>
             <p><strong>Objectifs principaux :</strong></p>
             <ul>
-                <li>Identifier l’activité malveillante, les canaux C2 et les tentatives d’exfiltration sur des captures réseau.</li>
-                <li>Détecter processus cachés, injection de code et mécanismes de persistance via l’analyse mémoire.</li>
-                <li>Comprendre les capacités d’un malware (comportements, IoC, logique interne) via reverse engineering.</li>
+                <li>Identifier l'activité malveillante, les canaux C2 et les tentatives d'exfiltration sur des captures réseau.</li>
+                <li>Détecter processus cachés, injection de code et mécanismes de persistance via l'analyse mémoire.</li>
+                <li>Comprendre les capacités d'un malware (comportements, IoC, logique interne) via reverse engineering.</li>
                 <li>Produire un rapport DFIR complet : méthodologie, preuves, IoC, timeline et recommandations.</li>
             </ul>
-
-            <p><strong>Travaux :</strong></p>
-            <ul>
-                <li><strong>Network Traffic Analysis :</strong> tri des flux, détection d’anomalies, identification IP/domaines suspects, C2 &amp; exfiltration.</li>
-                <li><strong>Memory Forensics :</strong> inspection des artefacts RAM (processus, modules, connexions, injections, persistance).</li>
-                <li><strong>Malware Analysis :</strong> analyse statique/dynamique, extraction IoC (hash, chemins, domaines/IP), documentation du comportement.</li>
-            </ul>
-
-            <p><strong>Outils &amp; méthodes :</strong> Wireshark, tcpdump, NetworkMiner, Volatility/Rekall, Ghidra/Cutter, strings, hash, timeline DFIR.</p>
-
+            <p><strong>Outils & méthodes :</strong> Wireshark, tcpdump, NetworkMiner, Volatility/Rekall, Ghidra/Cutter, strings, hash, timeline DFIR.</p>
             <p><strong>Livrables :</strong> Rapport DFIR (PDF) professionnel avec table des matières, IoC, timeline et recommandations de remédiation.</p>
-
-            <p><strong>Cadre légal :</strong> Projet strictement pédagogique, réalisé sur des données fournies par l’école, dans un environnement contrôlé.</p>
+            <p><a class="link" href="https://presenti.ai/app/share/CAE.IAEqED3j1J6amXMsYw5lvubz6-8wAkABSgozNTYyMTc0MDg0?invite_code=Crv8nqDA" target="_blank" rel="noopener">Voir la présentation →</a></p>
         </div>
 
-        <!-- Virology / C2 -->
-        <div class="project" data-category="cybersecurite universitaire">
-            <h2>T-SEC-901 – Virology : Conception d’un outil C2 furtif (s0P0wn3d)</h2>
-            <p><strong>Date :</strong> Janvier 2026 – Aujourd'hui</p>
-            <p><strong>Organisation :</strong> EPITECH – Projet T-SEC-901</p>
-            <p><strong>Rôle :</strong> Offensive Security / Red Team (cadre pédagogique)</p>
-
-            <p><strong>Description :</strong><br/>
-                Projet universitaire de cybersécurité offensive consistant à concevoir et développer, from scratch,
-                un prototype d’outil de Command &amp; Control (C2) furtif nommé <em>s0P0wn3d</em>,
-                afin de simuler des intrusions avancées et tester la capacité de détection d’un SOC
-                dans un environnement contrôlé (VM Windows sur Azure).
-            </p>
-
-            <p><strong>Objectifs principaux :</strong></p>
-            <ul>
-                <li>Concevoir un agent C2 le plus furtif possible (évasion AV/EDR, réduction de la surface de logs).</li>
-                <li>Assurer la résilience de l’outil lors d’intrusions longues (communication fiable, persistance contrôlée).</li>
-                <li>Fournir un panel de commandes offensives pour évaluer les mécanismes de défense d’une organisation.</li>
-            </ul>
-
+        <div class="item-card" data-category="cybersecurite universitaire">
+            <h3>T-SEC-901 – Virology : Conception d'un outil C2 furtif (s0P0wn3d)</h3>
+            <p><strong>Date :</strong> Janvier 2026 – Aujourd'hui · <strong>Organisation :</strong> EPITECH – Projet T-SEC-901 · <strong>Rôle :</strong> Offensive Security / Red Team (cadre pédagogique)</p>
+            <p><strong>Description :</strong> Projet universitaire de cybersécurité offensive consistant à concevoir et développer, from scratch, un prototype d'outil de Command & Control (C2) furtif nommé <em>s0P0wn3d</em>, afin de simuler des intrusions avancées et tester la capacité de détection d'un SOC dans un environnement contrôlé (VM Windows sur Azure).</p>
             <p><strong>Fonctionnalités clés implémentées (en environnement de test uniquement) :</strong></p>
             <ul>
-                <li><strong>shell :</strong> ouverture d’un pseudo-shell basé sur des commandes natives.</li>
-                <li><strong>keylog :</strong> activation / arrêt / extraction des frappes clavier à des fins d’étude.</li>
+                <li><strong>shell :</strong> ouverture d'un pseudo-shell basé sur des commandes natives.</li>
+                <li><strong>keylog :</strong> activation / arrêt / extraction des frappes clavier à des fins d'étude.</li>
                 <li><strong>rdp :</strong> activation / désactivation de Remote Desktop sur la machine cible.</li>
-                <li><strong>crack &amp; pth :</strong> lancement de tâches de craquage de mots de passe et attaques Pass-The-Hash pour comprendre les risques liés à une mauvaise gestion des secrets.</li>
+                <li><strong>crack & pth :</strong> tâches de craquage de mots de passe et attaques Pass-The-Hash pour comprendre les risques liés à une mauvaise gestion des secrets.</li>
                 <li><strong>loot :</strong> recherche et exfiltration contrôlée de fichiers sensibles (KeePass, clés SSH, etc.) dans le lab.</li>
                 <li><strong>phish :</strong> automatisation de scénarios de phishing à partir de la machine compromise (simulation).</li>
-                <li><strong>propagate &amp; privesc :</strong> étude de propagation latérale et d’élévation de privilèges locales.</li>
-                <li><strong>syscall / whateveryouwant :</strong> exécution de syscalls depuis l’espace utilisateur et commande bonus pour expérimenter des techniques avancées.</li>
+                <li><strong>propagate & privesc :</strong> étude de propagation latérale et d'élévation de privilèges locales.</li>
+                <li><strong>syscall / whateveryouwant :</strong> exécution de syscalls depuis l'espace utilisateur et commande bonus pour expérimenter des techniques avancées.</li>
             </ul>
-
-            <p><strong>Technologies &amp; concepts :</strong> Windows (Azure), C2, réseau, cryptographie,
-                appels système, détection &amp; évasion de défenses, OpSec red team.</p>
-
-            <p><strong>Livrables :</strong> Prototype fonctionnel testé sur une VM Azure,
-                documentation technique et rapport de bonnes pratiques (perspective blue team : durcissement, détection, logging).</p>
-
-            <p><strong>Cadre légal :</strong> Projet strictement pédagogique, réalisé dans un environnement isolé,
-                avec autorisation explicite. Aucune utilisation en dehors d’un contexte d’audit formel et encadré.</p>
+            <p><strong>Technologies & concepts :</strong> Windows (Azure), C2, réseau, cryptographie, appels système, détection & évasion de défenses, OpSec red team.</p>
+            <p><strong>Cadre légal :</strong> Projet strictement pédagogique, réalisé dans un environnement isolé, avec autorisation explicite.</p>
         </div>
 
-
-        <!-- Création de sites web sécurisés -->
-        <div class="project" data-category="web cybersecurite management transformation digitale">
-            <h2>Création de sites web sécurisés & formations</h2>
-
-            <p><strong>Date :</strong> Janvier 2026 – Aujourd’hui</p>
-            <p><strong>Statut :</strong> Projet freelance / entrepreneurial</p>
-            <p><strong>Rôle :</strong> Développeuse web & experte en cybersécurité</p>
-
-            <p><strong>Description :</strong><br/>
-                Projet personnel visant à concevoir, déployer et maintenir des sites web professionnels
-                (sites vitrines et e-commerce) avec une approche <em>security by design</em>.
-                L’objectif est de fournir aux commerçants, entrepreneurs et associations
-                des solutions web fiables, performantes et sécurisées dès la conception.
-            </p>
-
-            <p><strong>Fonctionnalités & services proposés :</strong></p>
+        <div class="item-card" data-category="web cybersecurite management transformation digitale">
+            <h3>Création de sites web sécurisés & formations</h3>
+            <p><strong>Date :</strong> Janvier 2026 – Aujourd'hui · <strong>Statut :</strong> Projet freelance / entrepreneurial · <strong>Rôle :</strong> Développeuse web & experte en cybersécurité</p>
+            <p><strong>Description :</strong> Projet personnel visant à concevoir, déployer et maintenir des sites web professionnels (sites vitrines et e-commerce) avec une approche <em>security by design</em>, à destination de commerçants, entrepreneurs et associations.</p>
+            <p><strong>Services proposés :</strong></p>
             <ul>
                 <li>Création de sites vitrines et e-commerce professionnels.</li>
                 <li>Design personnalisé et responsive (mobile & desktop).</li>
@@ -233,128 +93,62 @@
                 <li>Durcissement de base et prévention des vulnérabilités courantes.</li>
                 <li>Monitoring et suivi post-déploiement.</li>
             </ul>
-
-            <p><strong>Volet formation :</strong></p>
-            <ul>
-                <li>Formations pratiques en création de sites web (site vitrine & e-commerce).</li>
-                <li>Accompagnement sans prérequis technique.</li>
-                <li>Supports pédagogiques (PDF), groupe WhatsApp et suivi post-formation.</li>
-                <li>Formations en présentiel (Paris) et à distance (international).</li>
-            </ul>
-
-            <p><strong>Livrables :</strong>
-                Sites web prêts à l’emploi, documentation utilisateur,
-                supports de formation et accompagnement post-livraison.
-            </p>
+            <p><strong>Volet formation :</strong> Formations pratiques en création de sites web, accompagnement sans prérequis technique, supports pédagogiques, présentiel (Paris) et à distance (international).</p>
+            <p><a class="link" href="https://swa-tech.page.gd" target="_blank" rel="noopener">Voir SWA Tech →</a></p>
         </div>
 
-
-        <!-- GlycoPilot -->
-        <div class="project" data-category="cybersecurite web mobile">
-            <h2>GlycoPilot – Plateforme intelligente de suivi du diabète</h2>
-            <p><strong>Date :</strong> Sept. 2024 – Aujourd’hui</p>
-            <p><strong>Organisation :</strong> EPITECH</p>
-            <p><strong>Rôle :</strong> Chargée de la sécurité de l’application &amp; Développeuse backend</p>
-            <p><strong>Description :</strong><br/>
-                Application web &amp; mobile de monitoring du diabète en temps réel : centralisation des données
-                (glycémie, repas, activité), dashboards interactifs, alertes en temps réel et assistance intelligente
-                pour améliorer le suivi patient et la prise de décision.
-            </p>
-
+        <div class="item-card" data-category="cybersecurite web mobile">
+            <h3>GlycoPilot – Plateforme intelligente de suivi du diabète</h3>
+            <p><strong>Date :</strong> Sept. 2024 – Aujourd'hui · <strong>Organisation :</strong> EPITECH · <strong>Rôle :</strong> Chargée de la sécurité de l'application & Développeuse backend</p>
+            <p><strong>Description :</strong> Application web & mobile de monitoring du diabète en temps réel : centralisation des données (glycémie, repas, activité), dashboards interactifs, alertes en temps réel et assistance intelligente.</p>
             <p><strong>Contributions clés (sécurité) :</strong></p>
             <ul>
-                <li>Conception et mise en place de l’authentification sécurisée (mots de passe hachés, gestion de session/JWT, protection CSRF/XSS).</li>
-                <li>Contrôle d’accès par rôles (patient, médecin, admin) et cloisonnement des données sensibles (PII).</li>
+                <li>Conception et mise en place de l'authentification sécurisée (mots de passe hachés, gestion de session/JWT, protection CSRF/XSS).</li>
+                <li>Contrôle d'accès par rôles (patient, médecin, admin) et cloisonnement des données sensibles (PII).</li>
                 <li>Chiffrement des données en transit (TLS) et au repos, logs de sécurité et audit trail.</li>
                 <li>Application de bonnes pratiques OWASP (validation des entrées, rate limiting, en-têtes de sécurité, durcissement du déploiement).</li>
             </ul>
-
-            <p><strong>Contributions clés (backend) :</strong></p>
-            <ul>
-                <li>Conception des schémas et APIs (collecte glycémies, repas, activité, alertes, statistiques).</li>
-                <li>Endpoints pour dashboards temps réel et génération de rapports.</li>
-                <li>Intégrations capteurs/exports et tâches asynchrones pour traitements périodiques.</li>
-            </ul>
-
-            <p><strong>Fonctionnalités majeures :</strong> Dashboards interactifs, alertes temps réel,
-                suivi nutrition/activité, accessibilité renforcée, analyses multi-données et perspectives d’IA prédictive.</p>
-
-            <p><strong>Technologies :</strong> Backend REST, base SQL, Auth JWT/Session,
-                Docker, CI/CD (GitHub Actions), monitoring &amp; logs.</p>
-
-            <p><strong>Livrables :</strong> API documentée, guides de sécurité, plan de tests (fonctionnels &amp; sécu), tableaux de bord.</p>
+            <p><strong>Technologies :</strong> Backend REST, base SQL, Auth JWT/Session, Docker, CI/CD (GitHub Actions), monitoring & logs.</p>
         </div>
 
-        <!-- TerraCloud -->
-        <div class="project" data-category="devops cloud">
-            <h2>TerraCloud – Continuous Configuration Automation (T-CLO-901)</h2>
-            <p><strong>Date :</strong> Sept. 2025 – Nov. 2025</p>
-            <p><strong>Organisation :</strong> EPITECH</p>
-            <p><strong>Rôle :</strong> Étudiante / Cloud &amp; DevOps Engineer</p>
-            <p><strong>Description :</strong><br/>
-                Projet universitaire consistant à concevoir, déployer et comparer deux modèles d’infrastructure
-                Cloud (IaaS et PaaS) sur Azure, avec un focus sur l’automatisation, la scalabilité et la maîtrise des coûts.
-            </p>
-
-            <p><strong>Missions principales :</strong></p>
+        <div class="item-card" data-category="devops cloud">
+            <h3>TerraCloud – Continuous Configuration Automation (T-CLO-901)</h3>
+            <p><strong>Date :</strong> Sept. 2025 – Nov. 2025 · <strong>Organisation :</strong> EPITECH · <strong>Rôle :</strong> Étudiante / Cloud & DevOps Engineer</p>
+            <p><strong>Description :</strong> Conception, déploiement et comparaison de deux modèles d'infrastructure Cloud (IaaS et PaaS) sur Azure, avec un focus sur l'automatisation, la scalabilité et la maîtrise des coûts.</p>
             <ul>
-                <li>Déploiement d’une application sur Azure avec deux approches :
-                    <strong>IaaS</strong> (machines virtuelles) et <strong>PaaS</strong> (Azure Web App).</li>
-                <li>Utilisation d’<strong>Infrastructure as Code</strong> avec Terraform pour créer et gérer les ressources.</li>
-                <li>Automatisation des déploiements avec <strong>Ansible</strong> et intégration de <strong>Docker</strong>.</li>
-                <li>Mise en place d’un pipeline CI/CD pour builder une image Docker et assurer des déploiements reproductibles.</li>
-                <li>Stress tests et comparaison des performances (temps de réponse, statut, consommation des ressources) et des coûts des deux modèles.</li>
+                <li>Déploiement d'une application sur Azure : <strong>IaaS</strong> (VM) et <strong>PaaS</strong> (Azure Web App).</li>
+                <li>Infrastructure as Code avec Terraform.</li>
+                <li>Automatisation des déploiements avec Ansible et intégration de Docker.</li>
+                <li>Pipeline CI/CD pour builder une image Docker et assurer des déploiements reproductibles.</li>
+                <li>Stress tests et comparaison des performances et des coûts des deux modèles.</li>
             </ul>
-
             <p><strong>Technologies :</strong> Azure, Terraform, Ansible, Docker, GitHub Actions.</p>
-            <p><strong>Livrables :</strong> Guide de déploiement (IaaS &amp; PaaS), documentation d’automatisation, rapport de comparaison coûts/performances.</p>
         </div>
 
-        <!-- Jeu de simulation cyber -->
-        <div class="project" data-category="cybersecurite management universitaire">
-            <h2>Projet d'Étude – Jeu de Simulation Cyber</h2>
-            <p><strong>Date :</strong> Janv. 2025 – Avril 2025</p>
-            <p><strong>Organisation :</strong> EPITECH</p>
-            <p><strong>Rôle :</strong> Cheffe de projet</p>
-            <p><strong>Description :</strong><br/>
-                Développement d’un jeu interactif et éducatif permettant aux débutants en cybersécurité
-                d’apprendre de manière ludique et progressive. Le jeu comporte plusieurs niveaux
-                abordant différents aspects de la cybersécurité.
-            </p>
-            <p><strong>Différentes phases du projet :</strong></p>
+        <div class="item-card" data-category="cybersecurite management universitaire">
+            <h3>Projet d'Étude – Jeu de Simulation Cyber (CyberQuest)</h3>
+            <p><strong>Date :</strong> Janv. 2025 – Avril 2025 · <strong>Organisation :</strong> EPITECH · <strong>Rôle :</strong> Cheffe de projet</p>
+            <p><strong>Description :</strong> Développement d'un jeu interactif et éducatif permettant aux débutants en cybersécurité d'apprendre de manière ludique et progressive, avec plusieurs niveaux abordant différents aspects de la cybersécurité.</p>
             <ul>
                 <li><strong>Cybersécurité :</strong> Conception de scénarios réalistes.</li>
                 <li><strong>Développement :</strong> Création du jeu et des interfaces.</li>
                 <li><strong>Cloud :</strong> Hébergement scalable et sécurisé.</li>
                 <li><strong>Big Data :</strong> Analyse des données de jeu.</li>
             </ul>
+            <p><a class="link" href="https://gamma.app/docs/CyberQuest-:-Apprendre-la-Cybersecurite-en-Jouant-pxowuoird8aqx43?following_id=4ij6twmllnrk9oq&follow_on_start=true" target="_blank" rel="noopener">Voir la présentation →</a></p>
         </div>
 
-        <!-- Analyse et protection -->
-        <div class="project" data-category="cybersecurite devops">
-            <h2>Analyse et Protection des Systèmes</h2>
-            <p><strong>Date :</strong> Avril 2025 – Juin 2025</p>
-            <p><strong>Organisation :</strong> EPITECH</p>
-            <p><strong>Rôle :</strong> Analyste Cybersécurité &amp; DevOps</p>
-            <p><strong>Description :</strong><br/>
-                Reprise d’une infrastructure critique compromise suite au départ d’un administrateur.
-                Audit complet, exploitation de failles (privilege escalation, pivoting), durcissement des systèmes
-                et correction des vulnérabilités.
-                Mise en place d’un pipeline CI/CD sécurisé avec gestion des artefacts, conteneurisation des services,
-                journalisation centralisée, et déploiement d’une plateforme web avec système d’inventaire opérationnel.
-            </p>
+        <div class="item-card" data-category="cybersecurite devops">
+            <h3>Analyse et Protection des Systèmes</h3>
+            <p><strong>Date :</strong> Avril 2025 – Juin 2025 · <strong>Organisation :</strong> EPITECH · <strong>Rôle :</strong> Analyste Cybersécurité & DevOps</p>
+            <p><strong>Description :</strong> Reprise d'une infrastructure critique compromise suite au départ d'un administrateur. Audit complet, exploitation de failles (privilege escalation, pivoting), durcissement des systèmes et correction des vulnérabilités. Mise en place d'un pipeline CI/CD sécurisé avec gestion des artefacts, conteneurisation des services, journalisation centralisée, et déploiement d'une plateforme web avec système d'inventaire opérationnel.</p>
             <p><strong>Technos :</strong> Docker, GitLab CI/CD, React, TypeScript, Node.js, PostgreSQL, Portainer, Dirty COW.</p>
         </div>
 
-        <!-- Trinity -->
-        <div class="project" data-category="web devops mobile">
-            <h2>Trinity</h2>
-            <p><strong>Date :</strong> Novembre 2024 – Février 2025</p>
-            <p><strong>Organisation :</strong> EPITECH</p>
-            <p><strong>Description :</strong>
-                Développement d’un système DevOps, web et mobile pour une chaîne de supermarchés,
-                visant à optimiser l’expérience utilisateur et la gestion des stocks.
-            </p>
+        <div class="item-card" data-category="web devops mobile">
+            <h3>Trinity</h3>
+            <p><strong>Date :</strong> Novembre 2024 – Février 2025 · <strong>Organisation :</strong> EPITECH</p>
+            <p><strong>Description :</strong> Développement d'un système DevOps, web et mobile pour une chaîne de supermarchés, visant à optimiser l'expérience utilisateur et la gestion des stocks.</p>
             <ul>
                 <li><strong>DevOps :</strong> Pipeline CI/CD pour des déploiements automatisés avec tests.</li>
                 <li><strong>Web :</strong> Application pour la gestion des stocks et visualisation des performances (Django, React).</li>
@@ -363,120 +157,87 @@
             <p><strong>Livrables :</strong> Code source, documentation, pipeline CI/CD, et application mobile prête à déployer.</p>
         </div>
 
-        <!-- Jack the Ripeur -->
-        <div class="project" data-category="management transformation digitale">
-            <h2>JACK THE RIPEUR – Système de Gestion des Déchets 2.0</h2>
-            <p><strong>Date :</strong> Novembre 2024 – Février 2025</p>
-            <p><strong>Organisation :</strong> EPITECH</p>
-            <p><strong>Description :</strong><br/>
-                Le projet JACK THE RIPEUR modernise la gestion des déchets en ville, facilitant la coordination entre
-                citoyens et services municipaux grâce aux technologies numériques.
-            </p>
-            <p><strong>Initiatives principales :</strong></p>
+        <div class="item-card" data-category="management transformation digitale">
+            <h3>JACK THE RIPEUR – Système de Gestion des Déchets 2.0</h3>
+            <p><strong>Date :</strong> Novembre 2024 – Février 2025 · <strong>Organisation :</strong> EPITECH</p>
+            <p><strong>Description :</strong> Le projet JACK THE RIPEUR modernise la gestion des déchets en ville, facilitant la coordination entre citoyens et services municipaux grâce aux technologies numériques.</p>
             <ul>
                 <li><strong>App mobile :</strong> Signalement des incidents et demandes de service par les citoyens.</li>
                 <li><strong>Bacs connectés :</strong> Alertes automatiques quand les bacs sont pleins.</li>
                 <li><strong>GPS des camions :</strong> Optimisation des trajets et réponses aux incidents en temps réel.</li>
                 <li><strong>Gestion des équipes :</strong> Planification et suivi automatisés pour des plannings plus équitables.</li>
             </ul>
-            <p><strong>Phases clés :</strong><br/>
-                Préparation, accompagnement et suivi post-implémentation pour une adoption fluide des nouvelles pratiques.</p>
-            <p><strong>Livrables :</strong><br/>
-                Rapport complet et présentation de la stratégie.</p>
+            <p><strong>Livrables :</strong> Rapport complet et présentation de la stratégie.</p>
+            <p><a class="link" href="https://www.canva.com/design/DAHDqdChtTY/L7zE7dAlLtLNaybpTvMu_g/edit?utm_content=DAHDqdChtTY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Voir la présentation →</a></p>
         </div>
 
-        <!-- TimeManager -->
-        <div class="project" data-category="web devops">
-            <h2>TimeManager</h2>
-            <p><strong>Date :</strong> Octobre 2024</p>
-            <p><strong>Organisation :</strong> EPITECH</p>
-            <p><strong>Description :</strong> Développement d’une API multiplateforme pour la gestion du temps et des horaires.</p>
-            <p><strong>Missions :</strong> Conception de l'API backend avec Node.js et Express, mise en place de Docker pour le déploiement,
-                et intégration CI/CD via GitHub Actions.</p>
-            <p><strong>Technologies utilisées :</strong> Node.js, Vue.js, JWT, Docker, PostgreSQL.</p>
+        <div class="item-card" data-category="web devops">
+            <h3>TimeManager</h3>
+            <p><strong>Date :</strong> Octobre 2024 · <strong>Organisation :</strong> EPITECH</p>
+            <p><strong>Description :</strong> Développement d'une API multiplateforme pour la gestion du temps et des horaires.</p>
+            <p><strong>Missions :</strong> Conception de l'API backend avec Node.js et Express, mise en place de Docker pour le déploiement, et intégration CI/CD via GitHub Actions.</p>
+            <p><strong>Technologies :</strong> Node.js, Vue.js, JWT, Docker, PostgreSQL.</p>
         </div>
 
-        <!-- Analyste de données cyber UGA -->
-        <div class="project" data-category="universitaire cybersecurite">
-            <h2>Analyste de données cyber</h2>
-            <p><strong>Date :</strong> Déc. 2023 – Avr. 2024</p>
-            <p><strong>Organisation :</strong> UGA x STMicroelectronics, Grenoble</p>
-            <p><strong>Rôle :</strong> Analyse de données & exigences sécurité (cadre académique–industriel)</p>
-
-            <p><strong>Description :</strong><br/>
-                Aanalyse et sécurisation de fichiers/données utilisés dans un
-                environnement technique
-            </p>
-            <p><strong>Missions :</strong></p>
+        <div class="item-card" data-category="universitaire cybersecurite">
+            <h3>Analyste de données cyber</h3>
+            <p><strong>Date :</strong> Déc. 2023 – Avr. 2024 · <strong>Organisation :</strong> UGA x STMicroelectronics, Grenoble · <strong>Rôle :</strong> Analyse de données & exigences sécurité (cadre académique–industriel)</p>
+            <p><strong>Description :</strong> Analyse et sécurisation de fichiers/données utilisés dans un environnement technique.</p>
             <ul>
                 <li>Analyse des données et des formats de fichiers (structure, champs, contraintes, cas limites).</li>
-                <li>Analyse des risques et définition d’exigences de sécurité (robustesse, intégrité, traçabilité).</li>
-                <li>Conception de règles de validation et de cohérence (détection d’anomalies/incohérences, gestion d’erreurs).</li>
-                <li>Implémentation d’algorithmes de sécurisation/validation.</li>
+                <li>Analyse des risques et définition d'exigences de sécurité (robustesse, intégrité, traçabilité).</li>
+                <li>Conception de règles de validation et de cohérence (détection d'anomalies/incohérences, gestion d'erreurs).</li>
+                <li>Implémentation d'algorithmes de sécurisation/validation.</li>
                 <li>Tests (cas nominal + cas limites) et documentation des résultats.</li>
             </ul>
-
             <p><strong>Outils / technologies :</strong> Python, C/C++, YAML, Git/GitHub, Trello, environnement Linux.</p>
+            <p><a class="link" href="https://www.canva.com/design/DAGh6NAlIjI/149iWVC3fKBYKi-wWiHNWQ/edit?utm_content=DAGh6NAlIjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Voir la présentation →</a></p>
         </div>
 
-        <!-- Projet d'implémentation -->
-        <div class="project" data-category="universitaire">
-            <h2>Projet d'Implémentation</h2>
+        <div class="item-card" data-category="universitaire">
+            <h3>Projet d'Implémentation</h3>
             <p><strong>Organisation :</strong> UGA</p>
-            <p><strong>Description :</strong> Développement d’un SAT-solveur avec optimisation bitslicing dans un environnement universitaire.</p>
-            <p><strong>Missions :</strong> Implémentation d'algorithmes de base, utilisation du bitslicing pour l'amélioration de la résolution,
-                optimisation des opérations.</p>
+            <p><strong>Description :</strong> Développement d'un SAT-solveur avec optimisation bitslicing dans un environnement universitaire.</p>
+            <p><strong>Missions :</strong> Implémentation d'algorithmes de base, utilisation du bitslicing pour l'amélioration de la résolution, optimisation des opérations.</p>
             <p><strong>Technologies :</strong> C++, algorithmes heuristiques et techniques de bitslicing.</p>
+            <p><a class="link" href="https://www.canva.com/design/DAGe8D-FEPY/zmvLcdWAmqsQfUfgVRNIow/edit?utm_content=DAGe8D-FEPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Voir la présentation →</a></p>
         </div>
 
-        <!-- Projet de programmation -->
-        <div class="project" data-category="universitaire">
-            <h2>Projet de Programmation</h2>
+        <div class="item-card" data-category="universitaire">
+            <h3>Projet de Programmation</h3>
             <p><strong>Organisation :</strong> UGA</p>
-            <p><strong>Description :</strong> Programmation d'un système de recherche d’informations.</p>
-            <p><strong>Missions :</strong> Division du problème en 5 sous-problèmes, utilisation de Java et GitLab,
-                implémentation de plusieurs algorithmes de différents types afin d'atteindre l'objectif.</p>
+            <p><strong>Description :</strong> Programmation d'un système de recherche d'informations.</p>
+            <p><strong>Missions :</strong> Division du problème en 5 sous-problèmes, utilisation de Java et GitLab, implémentation de plusieurs algorithmes de différents types afin d'atteindre l'objectif.</p>
         </div>
 
-        <!-- Traduction automatique -->
-        <div class="project" data-category="universitaire">
-            <h2>Projet de Traduction automatique</h2>
+        <div class="item-card" data-category="universitaire">
+            <h3>Projet de Traduction automatique</h3>
             <p><strong>Organisation :</strong> UGA</p>
             <p><strong>Description :</strong> Modélisation en forme normale conjonctive au format Dimac.</p>
-            <p><strong>Missions :</strong> Traduction du jeu "FUTOSHIKI" (règles et contraintes),
-                transformation des règles et contraintes en logique du 1er ordre, modélisation au format Dimac.</p>
+            <p><strong>Missions :</strong> Traduction du jeu "FUTOSHIKI" (règles et contraintes), transformation des règles et contraintes en logique du 1er ordre, modélisation au format Dimac.</p>
+            <p><a class="link" href="https://docs.google.com/presentation/d/1YMmz_DzJt4cB1g84cappgigVOAFLK4GOHGap9GanHms/edit?usp=drivesdk" target="_blank" rel="noopener">Voir la présentation →</a></p>
         </div>
     </section>
 </main>
 
 <footer>
-    <div class="container footer-inner">
-        <p><a href="index.html">Retour à la page principale</a></p>
+    <div class="container">
+        <p>&copy; 2026 Meyan Traoré</p>
     </div>
 </footer>
 
-<!-- JavaScript pour les filtres -->
+<script src="assets/scripts.js"></script>
 <script>
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const projects = document.querySelectorAll('.project');
-
+    const items = document.querySelectorAll('.item-card');
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Supprime l'état "active" de tous les boutons
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Ajoute "active" au bouton cliqué
             button.classList.add('active');
-
             const filter = button.getAttribute('data-filter');
-
-            // Filtrer les projets
-            projects.forEach(project => {
-                const category = project.getAttribute('data-category') || '';
-                if (filter === 'all' || category.includes(filter)) {
-                    project.classList.remove('hidden');
-                } else {
-                    project.classList.add('hidden');
-                }
+            items.forEach(item => {
+                const category = item.getAttribute('data-category') || '';
+                item.classList.toggle('hidden', !(filter === 'all' || category.includes(filter)));
             });
         });
     });

@@ -1,78 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Certifications – Portfolio de Meyan</title>
-
-    <link rel="stylesheet" href="css/style.css"/>
-
-    <style>
-        .certifications-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 18px;
-            margin-top: 16px;
-        }
-
-        .certif-card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 20px 22px;
-            border: 1px solid #e5e7eb;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-            transition: all 0.15s ease;
-        }
-
-        .certif-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
-        }
-
-        .certif-card h3 {
-            color: #0a66c2;
-            margin-bottom: 6px;
-            font-size: 1.1rem;
-        }
-
-        .certif-card p {
-            margin: 4px 0;
-            color: #374151;
-            font-size: 0.95rem;
-        }
-
-        .btn-certif {
-            margin-top: 10px;
-            display: inline-block;
-            padding: 8px 14px;
-            border-radius: 999px;
-            background: #0a66c2;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: background 0.15s ease;
-        }
-
-        .btn-certif:hover {
-            background: #004a99;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications — Meyan Traoré</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-
+<body class="page-certifications">
 <header>
     <div class="container header-inner">
         <div class="branding">
-            <h1 class="site-title">
-                <a href="index.html">Portfolio de Meyan</a>
-            </h1>
-            <p class="site-subtitle">
-            </p>
+            <h1 class="site-title"><a href="index.html">Meyan Traoré</a></h1>
         </div>
-
-        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
-
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -89,127 +28,79 @@
 
 <main class="container">
     <div class="page-title">
-        <h1>Mes Certifications</h1>
+        <h1>Certifications</h1>
         <p>Certifications obtenues et en cours dans les domaines réseaux, cybersécurité et compétences numériques.</p>
     </div>
 
     <section class="certifications-grid">
-
-        <!-- CCNA 1 -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>CCNA 1 – Introduction to Networks (Cisco)</h3>
             <p><strong>Status :</strong> Obtenu – Décembre 2025</p>
-            <p>
-                Validation du premier module CCNA : modèles OSI/TCP-IP, IPv4/IPv6, configuration des switches
-                & routeurs de base, introduction aux protocoles réseau fondamentaux.
-            </p>
-            <a class="btn-certif" href="CCNA-_Introduction_to_Networks_certificate_meyanmariam04-gmail-com_a56a911a-e518-4f9b-919f-57178bb7f3d4.pdf" target="_blank">Voir le certificat</a>
+            <p>Validation du premier module CCNA : modèles OSI/TCP-IP, IPv4/IPv6, configuration des switches & routeurs de base, introduction aux protocoles réseau fondamentaux.</p>
+            <p><a class="btn" href="CCNA-_Introduction_to_Networks_certificate_meyanmariam04-gmail-com_a56a911a-e518-4f9b-919f-57178bb7f3d4.pdf" target="_blank">Voir le certificat</a></p>
         </div>
 
-        <!-- CCNA 2 -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>CCNA 2 – Switching, Routing & Wireless Essentials (Cisco)</h3>
             <p><strong>Status :</strong> En cours</p>
-            <p>
-                Module consacré aux réseaux LAN avancés : VLAN, STP, routage statique/dynamique, redondance
-                et introduction aux architectures sans fil.
-            </p>
+            <p>Module consacré aux réseaux LAN avancés : VLAN, STP, routage statique/dynamique, redondance et introduction aux architectures sans fil.</p>
         </div>
 
-        <!-- Networking Basics Cisco -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>Networking Basics – Cisco</h3>
             <p><strong>Status :</strong> Obtenu – Mars 2025</p>
-            <p>
-                Bases des réseaux : adressage IP, topologies, commutation, concepts OSI, transmission de données
-                et premiers pas en configuration réseau.
-            </p>
-            <a class="btn-certif" href="NetworkingBasicsUpdate20250318-26-ox5lxy.pdf" target="_blank">Voir le certificat</a>
+            <p>Bases des réseaux : adressage IP, topologies, commutation, concepts OSI, transmission de données et premiers pas en configuration réseau.</p>
+            <p><a class="btn" href="NetworkingBasicsUpdate20250318-26-ox5lxy.pdf" target="_blank">Voir le certificat</a></p>
         </div>
 
-        <!-- Introduction to Cybersecurity -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>Introduction to Cybersecurity – Cisco</h3>
             <p><strong>Status :</strong> Obtenu</p>
-            <p>
-                Connaissances introductives en cybersécurité : implications des cybermenaces, 
-                détection des vulnérabilités, défense des systèmes et aperçu des certifications 
-                dans le domaine.
-            </p>
-            <a class="btn-certif" href="Introduction_to_Cybersecurity_certificate_meyanmariam04-gmail-com_71acfbd1-f960-416e-9d3c-9efce74e14ca.pdf" target="_blank">Voir le certificat</a>
+            <p>Connaissances introductives en cybersécurité : implications des cybermenaces, détection des vulnérabilités, défense des systèmes et aperçu des certifications dans le domaine.</p>
+            <p><a class="btn" href="Introduction_to_Cybersecurity_certificate_meyanmariam04-gmail-com_71acfbd1-f960-416e-9d3c-9efce74e14ca.pdf" target="_blank">Voir le certificat</a></p>
         </div>
 
-        <!-- Cyber Threat Management -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>Cyber Threat Management – Cisco</h3>
             <p><strong>Status :</strong> Obtenu</p>
-            <p>
-                Politiques et gouvernance en cybersécurité, évaluation des vulnérabilités réseau, 
-                gestion des risques, Cyber Kill Chain, modèle Diamond et réponse post-incident.
-            </p>
-            <a class="btn-certif" href="Cyber_Threat_Management_certificate_meyanmariam04-gmail-com_f87cb6a7-6621-4c91-868f-6b94b1079bab.pdf" target="_blank">Voir le certificat</a>
+            <p>Politiques et gouvernance en cybersécurité, évaluation des vulnérabilités réseau, gestion des risques, Cyber Kill Chain, modèle Diamond et réponse post-incident.</p>
+            <p><a class="btn" href="Cyber_Threat_Management_certificate_meyanmariam04-gmail-com_f87cb6a7-6621-4c91-868f-6b94b1079bab.pdf" target="_blank">Voir le certificat</a></p>
         </div>
 
-        <!-- XWorm Lab -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>XWorm Blue Team Lab – CyberDefenders</h3>
             <p><strong>Status :</strong> Obtenu – Mai 2026</p>
-            <p>
-                Analyse d’un scénario Blue Team autour du malware XWorm : investigation,
-                détection d’activités malveillantes, analyse réseau et réponse à incident.
-            </p>
-            <a class="btn-certif"
-            href="https://cyberdefenders.org/blueteam-ctf-challenges/achievements/meyan.traore/xworm/"
-            target="_blank">
-            Voir le certificat
-            </a>
+            <p>Analyse d'un scénario Blue Team autour du malware XWorm : investigation, détection d'activités malveillantes, analyse réseau et réponse à incident.</p>
+            <p><a class="btn" href="https://cyberdefenders.org/blueteam-ctf-challenges/achievements/meyan.traore/xworm/" target="_blank" rel="noopener">Voir le certificat</a></p>
         </div>
 
-        <!-- LinkedIn Learning -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>Sensibilisation à la cybersécurité – LinkedIn Learning</h3>
             <p><strong>Status :</strong> Obtenu – Mai 2026</p>
-            <p>
-                Formation de sensibilisation aux fondamentaux de la cybersécurité :
-                phishing, mots de passe, sécurité des données et bonnes pratiques numériques.
-            </p>
-            <a class="btn-certif"
-            href="https://www.linkedin.com/learning/certificates/d08ba98459b069210bcff7eb9bf15030abb747eab2fce8358281437b940403da?trk=share_certificate"
-            target="_blank">
-            Voir le certificat
-            </a>
+            <p>Formation de sensibilisation aux fondamentaux de la cybersécurité : phishing, mots de passe, sécurité des données et bonnes pratiques numériques.</p>
+            <p><a class="btn" href="https://www.linkedin.com/learning/certificates/d08ba98459b069210bcff7eb9bf15030abb747eab2fce8358281437b940403da?trk=share_certificate" target="_blank" rel="noopener">Voir le certificat</a></p>
         </div>
 
-        <!-- SecNum Académie -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>SecNum Académie – ANSSI</h3>
             <p><strong>Status :</strong> En cours</p>
-            <p>
-                Programme officiel de sensibilisation à la cybersécurité : gestion des risques, hygiène numérique,
-                sécurité des SI, menaces et bonnes pratiques.
-            </p>
+            <p>Programme officiel de sensibilisation à la cybersécurité : gestion des risques, hygiène numérique, sécurité des SI, menaces et bonnes pratiques.</p>
         </div>
 
-        <!-- PIX -->
-        <div class="certif-card">
+        <div class="item-card">
             <h3>PIX – Compétences numériques</h3>
             <p><strong>Status :</strong> Obtenu – 2021</p>
-            <p>
-                Validation des compétences numériques essentielles : bureautique, sécurité, navigation web,
-                collaboration en ligne et bonnes pratiques digitales.
-            </p>
+            <p>Validation des compétences numériques essentielles : bureautique, sécurité, navigation web, collaboration en ligne et bonnes pratiques digitales.</p>
         </div>
-
     </section>
 </main>
 
 <footer>
-    <div class="container footer-inner">
-        <p><a href="index.html">Retour à la page principale</a></p>
-        <p>Retrouvez-moi sur <a href="https://www.linkedin.com/in/meyan/" target="_blank">LinkedIn</a></p>
+    <div class="container">
+        <p>&copy; 2026 Meyan Traoré · <a href="https://www.linkedin.com/in/meyan/" target="_blank" rel="noopener">LinkedIn</a></p>
     </div>
 </footer>
 
-<script defer="true" src="assets/scripts.js"></script>
+<script src="assets/scripts.js"></script>
 </body>
 </html>

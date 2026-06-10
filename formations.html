@@ -1,83 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Formations – Portfolio de Meyan</title>
-    <link rel="stylesheet" href="css/style.css"/>
-
-    <!-- Styles spécifiques à la page formations -->
-    <style>
-        .education-section {
-            margin: 20px auto;
-            max-width: 900px;
-            background-color: #ffffff;
-            border-radius: 16px;
-            padding: 24px 28px;
-            box-shadow: 0 8px 26px rgba(15, 23, 42, 0.08);
-            border: 1px solid #e5e7eb;
-        }
-
-        .education-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .education-item {
-            margin-bottom: 22px;
-            padding: 16px 18px;
-            border-left: 5px solid #0a66c2;
-            background: #f9fafb;
-            border-radius: 6px;
-            transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
-        }
-
-        .education-item:hover {
-            background: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
-        }
-
-        .education-item strong {
-            font-size: 1.05rem;
-            color: #111827;
-        }
-
-        .education-item em {
-            color: #6b7280;
-            font-style: normal;
-        }
-
-        .education-item ul {
-            margin-top: 10px;
-            margin-bottom: 6px;
-            list-style-type: disc;
-            padding-left: 24px;
-        }
-
-        .education-section h2 {
-            color: #0a66c2;
-            margin-bottom: 16px;
-            font-size: 1.25rem;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations — Meyan Traoré</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-<!-- HEADER -->
+<body class="page-formations">
 <header>
     <div class="container header-inner">
         <div class="branding">
-            <h1 class="site-title">
-                <a href="index.html">Portfolio de Meyan</a>
-            </h1>
-            <p class="site-subtitle">
-            </p>
+            <h1 class="site-title"><a href="index.html">Meyan Traoré</a></h1>
         </div>
-
-        <img src="moi2.png" alt="Photo de Meyan" class="profile-pic">
-
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -92,99 +26,78 @@
     </div>
 </header>
 
-<!-- MAIN -->
 <main class="container">
     <div class="page-title">
-        <h1>Mes Formations</h1>
+        <h1>Formations</h1>
         <p>Parcours universitaire complet, orienté cybersécurité, informatique et mathématiques.</p>
     </div>
 
-    <div class="education-section">
-        <h2>Formations académiques</h2>
-        <ul class="education-list">
+    <section>
+        <div class="item-card">
+            <h3>Master en Architecture de Systèmes d'Information – Spécialisation Cybersécurité</h3>
+            <p><em>EPITECH, Paris</em> — 2024 – 2026</p>
+            <p>Découvrez le programme <a class="link" href="https://www.epitech.eu/formation-alternance/master-of-science-cybersecurite/" target="_blank" rel="noopener">ici</a>.</p>
+        </div>
 
+        <div class="item-card">
+            <h3>Licence 3 – Mathématiques et Informatique</h3>
+            <p><em>Université Grenoble Alpes, Grenoble</em> — Sept. 2023 – Avr. 2024</p>
+            <ul>
+                <li><strong>Semestre 5 :</strong>
+                    <ul>
+                        <li>Analyse approfondie</li>
+                        <li>Algèbre linéaire pour le graphique et la CAO</li>
+                        <li>Algèbre et arithmétique effective</li>
+                        <li>Algorithmique</li>
+                        <li>Programmation</li>
+                    </ul>
+                </li>
+                <li><strong>Semestre 6 :</strong>
+                    <ul>
+                        <li>Modèles probabilistes et statistique</li>
+                        <li>Modèles différentiels et applications</li>
+                        <li>Graphes et optimisation discrète</li>
+                        <li>Optimisation continue</li>
+                        <li>Programmation par objet</li>
+                        <li>Système et bases de données</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-            <!-- EPITECH -->
-            <li class="education-item">
-                <strong>Master en Architecture de Systèmes d'Information – Spécialisation Cybersécurité</strong><br>
-                <em>EPITECH, Paris</em><br>
-                2024 – 2026 <br>
-                <p>Découvrez le programme en cliquant
-                    <a href="https://www.epitech.eu/formation-alternance/master-of-science-cybersecurite/"
-                       target="_blank">ici</a>.
-                </p>
-            </li>
+        <div class="item-card">
+            <h3>Licence 2 – Mathématiques et Informatique</h3>
+            <p><em>Université Grenoble Alpes, Valence</em> — Sept. 2022 – Mai 2023</p>
+            <ul>
+                <li>Automates et théorie des langages</li>
+                <li>Algorithmique et programmation impérative</li>
+                <li>Logique et architectures logicielles & matérielles</li>
+                <li>Suites et séries numériques et de fonctions</li>
+                <li>Algèbre bilinéaire</li>
+                <li>Fonctions de plusieurs variables</li>
+            </ul>
+        </div>
 
-            <!-- L3 UGA -->
-            <li class="education-item">
-                <strong>Licence 3 – Mathématiques et Informatique</strong><br>
-                <em>Université Grenoble Alpes, Grenoble</em><br>
-                Sept. 2023 – Avr. 2024
-
-                <ul>
-                    <li><strong>Semestre 5 :</strong>
-                        <ul>
-                            <li>Analyse approfondie</li>
-                            <li>Algèbre linéaire pour le graphique et la CAO</li>
-                            <li>Algèbre et arithmétique effective</li>
-                            <li>Algorithmique</li>
-                            <li>Programmation</li>
-                        </ul>
-                    </li>
-
-                    <li><strong>Semestre 6 :</strong>
-                        <ul>
-                            <li>Modèles probabilistes et statistique</li>
-                            <li>Modèles différentiels et applications</li>
-                            <li>Graphes et optimisation discrète</li>
-                            <li>Optimisation continue</li>
-                            <li>Programmation par objet</li>
-                            <li>Système et bases de données</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-            <!-- L2 UGA -->
-            <li class="education-item">
-                <strong>Licence 2 – Mathématiques et Informatique</strong><br>
-                <em>Université Grenoble Alpes, Valence</em><br>
-                Sept. 2022 – Mai 2023
-
-                <ul>
-                    <li>Automates et théorie des langages</li>
-                    <li>Algorithmique et programmation impérative</li>
-                    <li>Logique et architectures logicielles & matérielles</li>
-                    <li>Suites et séries numériques et de fonctions</li>
-                    <li>Algèbre bilinéaire</li>
-                    <li>Fonctions de plusieurs variables</li>
-                </ul>
-            </li>
-
-            <!-- L1 UGA -->
-            <li class="education-item">
-                <strong>Licence 1 – Informatique, Mathématiques et Applications</strong><br>
-                <em>Université Grenoble Alpes</em><br>
-                Sept. 2021 – Mai 2022
-
-                <ul>
-                    <li>Introduction à l’intelligence artificielle</li>
-                    <li>Programmation fonctionnelle</li>
-                    <li>Mathématiques appliquées</li>
-                    <li>Analyse réelle</li>
-                    <li>Certification PIX</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <div class="item-card">
+            <h3>Licence 1 – Informatique, Mathématiques et Applications</h3>
+            <p><em>Université Grenoble Alpes</em> — Sept. 2021 – Mai 2022</p>
+            <ul>
+                <li>Introduction à l'intelligence artificielle</li>
+                <li>Programmation fonctionnelle</li>
+                <li>Mathématiques appliquées</li>
+                <li>Analyse réelle</li>
+                <li>Certification PIX</li>
+            </ul>
+        </div>
+    </section>
 </main>
 
-<!-- FOOTER -->
 <footer>
-    <div class="container footer-inner">
-        <p><a href="index.html">Retour à la page principale</a></p>
+    <div class="container">
+        <p>&copy; 2026 Meyan Traoré</p>
     </div>
 </footer>
 
+<script src="assets/scripts.js"></script>
 </body>
 </html>
